@@ -1,25 +1,26 @@
 ---
-import Data from "../../public/data/prodHome.json"
-import CardProducts1 from "./CardProducts1.astro";
-import CardProducts2 from "./CardProducts2.astro";
+import { Image } from 'astro:assets';
+interface Props {
+    title : String;
+    desc : String;
+    img : String
+}
 
-const data = Data
+const {title, desc, img} = Astro.props
 ---
-<div class="border-y-4 mr-16 ml-16 ">
-<div class="containerProductsHome ">
-  
-<h2 class="font-bold text-4xl text-center mt-6  "> PRODUCTOS</h2>
 
-{data.map((product, index) => {
-    const esPar = index % 2 === 0;
-    if (esPar) {
-        return <CardProducts1 title={product.title} desc={product.desc} img={product.img} />;
-    }
-        return <CardProducts2 title={product.title} desc={product.desc} img={product.img} />;
-    })}
+<div class="containerProductsDiv">
+    <div >
+        <a href="#"> 
+            <img class="object-none rounded-lg h-48 w-96  border-4 border-slate-300 hover:border-red-700" src=`${img}` alt=`imagen ${title}`>
+        </a>
+    </div>
+    <div>
+        <h3 class="font-bold text-lg">{title}</h3>
+        <p class="text-justify mr-16">{desc}</p>
+    </div>
+</div>
 
-</div>
-</div>
 <style>
     .containerProductsHome{
         display: grid;

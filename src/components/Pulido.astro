@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import imgPulido from "../../public/images-home/pulido.jpg"
+---
+
+<div class="w-full grid place-items-center">
+<div class="div1 w-[90%] ">
+    <div class="div1-1 gap-[5%] grid place-items-center">
+        <Image src={imgPulido} alt="imagen pulido" class="rounded-xl"></Image>
+        <div>
+            <div class="mb-4">
+            <h3 class="textBold text-lg px-3">
+¿Deseas convertir tus paredes en el lienzo perfecto para hacer que tu hogar sea único y especial?
+</h3>
+</div>
+<p class="text-justify px-3">
+Tus paredes son la oportunidad perfecta para la creatividad: pueden ser el reflejo de un estilo o personalidad, convirtiendo así tu hogar en algo verdaderamente único y especial. Cada elección que 
+hagas para tus paredes contribuirá a la creación de un ambiente que te represente. 
+</p>
+</div>
+</div>
+</div>
+
+<div class=" text-center w-[90%]">
+<div class="mb-5">
+<h2 class="text-red-700 font-bold text-2xl">
+    Nuestros revestimientos están diseñados para llevar belleza a tus espacios
+</h2>
+</div>
+<p class="text-lg">
+    Transformar tus paredes es, además de una excelente decisión decorativa, un viaje hacia el confort y la calidez. 
+    ¡Descubrí cómo transformar tu espacio en un auténtico hogar con estilo de la mano de Rústicos Mendoza!
+</p>
+</div>
+
+</div>
+
+
+<style>
+    .div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0 20px 0
+    }
+    .div1-1{
+        display: grid;
+        width: 100%;
+        place-items: center;
+        grid-template-columns: 40% 55%;
+        grid-template-rows: auto;
+        margin: 5% 0 5% 0
+    }
+</style>
