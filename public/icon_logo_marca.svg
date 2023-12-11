@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.93 62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #676767;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #eb5d5d;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #a8a8a8;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="m14.07,0H0v14.08h14.07V0Z"/>
+  <path class="cls-2" d="m14.07,15.97H0v14.08h14.07v-14.08Z"/>
+  <path class="cls-2" d="m14.07,31.95H0v14.08h14.07v-14.08Z"/>
+  <path class="cls-2" d="m14.07,47.92H0v14.08h14.07v-14.08Z"/>
+  <path class="cls-1" d="m30.03,15.97h-14.07v14.08h14.07v-14.08Z"/>
+  <path class="cls-1" d="m30.03,31.95h-14.07v14.08h14.07v-14.08Z"/>
+  <path class="cls-1" d="m30.03,47.92h-14.07v14.08h14.07v-14.08Z"/>
+  <path class="cls-4" d="m45.98,31.95h-14.07v14.08h14.07v-14.08Z"/>
+  <path class="cls-4" d="m45.98,47.92h-14.07v14.08h14.07v-14.08Z"/>
+  <path class="cls-3" d="m61.93,47.92h-14.07v14.08h14.07v-14.08Z"/>
+</svg>

@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "pregunta": "¿Cómo puedo pagar?",
+      "respuesta": "efectivo, transferencia bancaria, mercado pago, tarjetas de débito y crédito con recargo."
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Cómo son los envíos?",
+      "respuesta": "puede retirar la mercadería por fábrica o se envía en transporte tercerizado a costear por el cliente."
+    },
+    {
+      "id": 3,
+      "pregunta": "¿dónde se ubica el local comercial?",
+      "respuesta": "lisandro moyano 645 de las heras"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Puedo cambiar un producto?",
+      "respuesta": "si, siempre y cuando se encuentre en las condiciones que fue proveído."
+    },
+    {
+      "id": 5,
+      "pregunta": "¿qué material se recomienda para pegar estos productos?",
+      "respuesta": "se recomienda pegamento ceramico Impermeable."
+    },
+    {
+      "id": 6,
+      "pregunta": "¿cuánto tiempo se recomienda para poder transitar los pisos?",
+      "respuesta": "una vez pegados a los 3 días."
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Requieren mantenimiento especial?",
+      "respuesta": "si, se les aplica curador o hidrolacas cada cierto tiempo."
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Puedo instalarlo yo mismo o necesito un profesional?",
+      "respuesta": "se aconseja un profesional."
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Poseen instaladores?",
+      "respuesta": "si, son personal tercerizado, no de la empresa."
+    },
+    {
+      "id": 10,
+      "pregunta": "¿Son adecuados para áreas exteriores e interiores?",
+      "respuesta": "si"
+    }
+  ]

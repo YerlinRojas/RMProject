@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Piedra Ardesia",
+        "desc": "Revestimiento cementicio 18 unidades por M2",
+        "img" :"../public/img_Revestimientos/piedra_ardesia1.jpg",
+        "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
+        "punteo1" : "Revestimiento cementicio",
+        "punteo2" : "18 unidades por M2",
+        "punteo3" : "Facilidad de corte",
+        "punteo4" : "Resistencia al calor",
+        "punteo5" : "Resistencia al deslizamiento",
+        "punteo6" : "Ecológica",
+        "cat": "Revestimientos"
+    },
+    {
+        "title": "Piedra Irregular",
+        "desc": "Revestimiento cementicio 18 unidades por M2",
+        "img" :"../public/img_Revestimientos/piedra_irregular1.jpg",
+        "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
+        "punteo1" : "Revestimiento cementicio",
+        "punteo2" : "18 unidades por M2",
+        "punteo3" : "Facilidad de corte",
+        "punteo4" : "Resistencia al calor",
+        "punteo5" : "Resistencia al deslizamiento",
+        "punteo6" : "Ecológica",
+        "cat": "Revestimientos"
+    },
+    {
+        "title": "Piedra Scala",
+        "desc": "Revestimiento cementicio 18 unidades por M2",
+        "img" :"../public/img_Revestimientos/piedra_scala1.jpg",
+        "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
+        "punteo1" : "Revestimiento cementicio",
+        "punteo2" : "18 unidades por M2",
+        "punteo3" : "Facilidad de corte",
+        "punteo4" : "Resistencia al calor",
+        "punteo5" : "Resistencia al deslizamiento",
+        "punteo6" : "Ecológica",
+        "cat": "Revestimientos"
+    },
+    {
+        "title": "Piedra Zapala",
+        "desc": "Revestimiento cementicio 24 unidades por M2",
+        "img" :"../public/img_Revestimientos/piedra_zapala1.jpg",
+        "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
+        "punteo1" : "Revestimiento cementicio",
+        "punteo2" : "18 unidades por M2",
+        "punteo3" : "Facilidad de corte",
+        "punteo4" : "Resistencia al calor",
+        "punteo5" : "Resistencia al deslizamiento",
+        "punteo6" : "Ecológica",
+        "cat": "Revestimientos"
+    },
+    {
+        "title": "Símil Block",
+        "desc": "Revestimiento cementicio 12 unidades por M2",
+        "img" :"../public/img_Revestimientos/simil_block1.jpg",
+        "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
+        "punteo1" : "Revestimiento cementicio",
+        "punteo2" : "18 unidades por M2",
+        "punteo3" : "Facilidad de corte",
+        "punteo4" : "Resistencia al calor",
+        "punteo5" : "Resistencia al deslizamiento",
+        "punteo6" : "Ecológica",
+        "cat": "Revestimientos"
+    },
+    {
+        "title": "Símil Laja",
+        "desc": "Revestimiento cementicio 12 unidades por M2",
+        "img" :"../public/img_Revestimientos/simil_laja1.jpg",
+        "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
+        "punteo1" : "Revestimiento cementicio",
+        "punteo2" : "18 unidades por M2",
+        "punteo3" : "Facilidad de corte",
+        "punteo4" : "Resistencia al calor",
+        "punteo5" : "Resistencia al deslizamiento",
+        "punteo6" : "Ecológica",
+        "cat": "Revestimientos"
+    },
+    {
+        "title": "Símil Travertino",
+        "desc": "Revestimiento cementicio 12 unidades por M2",
+        "img" :"../public/img_Revestimientos/simil_travertino1.jpg",
+        "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
+        "punteo1" : "Revestimiento cementicio",
+        "punteo2" : "18 unidades por M2",
+        "punteo3" : "Facilidad de corte",
+        "punteo4" : "Resistencia al calor",
+        "punteo5" : "Resistencia al deslizamiento",
+        "punteo6" : "Ecológica",
+        "cat": "Revestimientos"
+    }
+]
