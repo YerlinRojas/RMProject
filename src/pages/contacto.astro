@@ -1,15 +1,15 @@
 ---
-import ContactForm from "../components/Contact_Form.astro";
 import Layout from "../layouts/Layout.astro";
 import CardContacto from "../components/CardContacto.astro"
+import Contact_Form from "../components/React_Components/Contact_Form"
 
 ---
 
 <Layout title="Contacto">
-    <main>
+    <main class="2xl:h-[659px]">
         <div class="grid grid-cols-2 w-full h-auto my-10 ">
-            <CardContacto/>
-            <ContactForm/>
+            <CardContacto/>  
+            <Contact_Form client:only/>
         </div>
     </main>
 </Layout>
