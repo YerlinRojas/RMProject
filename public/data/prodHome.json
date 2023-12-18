@@ -1,31 +1,31 @@
 [
     {
     "id": "containerProductsDiv-0",
-    "title": "REVESTIMIENTOS",
+    "title": "Revestimientos",
     "desc": "Nuestros revestimientos están diseñados para dar vida a tus paredes y fachadas. Desde acabados texturizados hasta opciones elegantes y modernas, nuestra colección de revestimientos te permitirá crear ambientes impresionantes y duraderos.",
     "img": "./public/images-home/piedra_scala1.jpg"
     },
     {
     "id": "containerProductsDiv-1",
-    "title": "CEMENTICIOS",
+    "title": "Cementicios",
     "desc": "Los productos cementicios son esenciales para proyectos de construcción y remodelación. Ofrecemos una variedad de opciones de cemento de alta calidad, desde morteros y adhesivos hasta revestimientos impermeables y morteros autonivelantes, ideales para cualquier aplicación.",
     "img": "./public/images-home/12.jpg"
     },
     {
     "id": "containerProductsDiv-2",
-    "title": "MESADAS",
+    "title": "Mesadas",
     "desc": "Descubre nuestra selección de estilos de mesadas que se adaptan perfectamente a tus necesidades en la cocina o el baño. Las mesadas no aportan solo elegancia, sino también funcionalidad a tus espacios.",
     "img": "./public/images-home/mesada_aplicada1.jpg"
     },
     {
     "id": "containerProductsDiv-3",
-    "title": "ADHESIVOS",
+    "title": "Adhesivos",
     "desc": "Entendemos la importancia de la eficiencia en tus proyectos. Ya sea en interiores o exteriores, nuestros adhesivos están diseñados para resistir a las condiciones más exigentes. Encuentra la solución perfecta para tu proyecto.",
     "img": "./public/images-home/p4.jpg"
     },
     {
     "id": "containerProductsDiv2-0",
-    "title": "PISOS",
+    "title": "Pisos",
     "desc": "Nuestra colección de pisos ofrece una amplia gama de opciones para cada rincón de tu hogar. Desde suelos que aportan calidez en el interior de tu hogar hasta elegantes pisos de exterior, tenemos la solución perfecta para ti.",
     "img": "./public/images-home/piso_exterior1.jpg"
     }

@@ -1,15 +1,16 @@
 ---
 import { Image } from "astro:assets";
-import imgPulido from "../../public/images-home/pulido.jpg"
-
+import publi1 from "../../public/images-home/home_carrousel1.jpg"
+import publi2 from "../../public/images-home/home_carrousel2.jpg"
+import publi3 from "../../public/images-home/home_carrousel3.jpg"
 ---
 
-<div class="flex  flex-col justify-between  sm:flex-col sm:justify-between  md:flex-row md:justify-between  ">
+<div class="flex  flex-col justify-between  sm:flex-col sm:justify-between  md:flex-row md:justify-between  m-10">
     <!-- contenedor 1 -->
     <div class="flex-1 border-2 border-red-600 p-4 m-2 rounded-lg"> 
         <div class="flex flex-col items-center sm:flex-row sm:items-center md:flex-col md:items-center ">
 
-                <img class="rounded-lg w-46 border-4 border-slate-300 sm:w-[50%] sm:border-4 sm:border-slate-300  md:w-96 md:border-4 md:border-slate-300 md:hover:border-red-700" src="./public/images-home/home_carrousel1.jpg" alt="img1">
+                <Image class="rounded-lg w-46 border-4 border-slate-300 sm:w-[50%] sm:border-4 sm:border-slate-300  md:w-96 md:border-4 md:border-slate-300 md:hover:border-red-700" src={publi1} alt="img1"> </Image>
 
                 <div class="flex flex-col items-center m-4 sm:flex-col sm:items-center sm:m-4 md:flex-col md:items-center md:m-4">
                 <svg class="w-10 sm:w-20 md:w-20" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.33 75">
@@ -40,7 +41,7 @@ import imgPulido from "../../public/images-home/pulido.jpg"
     <div class="flex-1 border-2 border-red-600 p-4 m-2 rounded-lg">
         <div class="flex flex-col items-center sm:flex-row sm:items-center md:flex-col md:items-center ">
 
-                <img class="rounded-lg w-46 border-4 border-slate-300 sm:w-[50%] sm:border-4 sm:border-slate-300  md:w-96 md:border-4 md:border-slate-300 md:hover:border-red-700" src="./public/images-home/home_carrousel2.jpg"  alt="img2">
+                <Image class="rounded-lg w-46 border-4 border-slate-300 sm:w-[50%] sm:border-4 sm:border-slate-300  md:w-96 md:border-4 md:border-slate-300 md:hover:border-red-700" src={publi2}  alt="img2"> </Image>
       
             <div class="flex flex-col items-center m-4 sm:flex-col sm:items-center sm:m-4 md:flex-col md:items-center md:m-4">
                 <svg  class="w-10 sm:w-20 md:w-20" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 97">
@@ -70,7 +71,7 @@ import imgPulido from "../../public/images-home/pulido.jpg"
     <div class="flex-1 border-2 border-red-600 p-4 m-2 rounded-lg">
         <div class="flex flex-col items-center sm:flex-row sm:items-center md:flex-col md:items-center ">
 
-                <img class="rounded-lg w-46 border-4 border-slate-300 sm:w-[50%] sm:border-4 sm:border-slate-300  md:w-96 md:border-4 md:border-slate-300 md:hover:border-red-700" src="./public/images-home/home_carrousel3.jpg"  alt="img3">
+                <Image class="rounded-lg w-46 border-4 border-slate-300 sm:w-[50%] sm:border-4 sm:border-slate-300  md:w-96 md:border-4 md:border-slate-300 md:hover:border-red-700" src={publi3}  alt="img3"> </Image>
 
             <div class="flex flex-col items-center m-4 sm:flex-col sm:items-center sm:m-4 md:flex-col md:items-center md:m-4">
                 <svg class="w-10 sm:w-20 md:w-[16%]" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.25 90.13">

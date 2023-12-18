@@ -8,42 +8,15 @@ interface Props {
 const {title, desc, img} = Astro.props
 ---
 
-<div class="containerProductsDiv">
-    <div class="ml-16">
-        <h3 class="font-bold text-lg">{title}</h3>
-        <p class="text-justify ">{desc}</p>
+<div class="grid grid-cols-3 gap-4 place-items-center border-4 border-slate-300 rounded-lg sm:border-0 sm:grid-cols-3 sm:gap-4 sm:place-items-center md:border-0 md:grid-cols-3 md:gap-4 md:place-items-center m-5 sm:m-10 md:m-10" >
+    <div class="col-span-2 sm:col-span-2 sm:border-2 sm:rounded-lg sm:border-red-700 md:col-span-2 md:border-2 md:rounded-lg md:border-red-700 p-5 " >
+        <h3  class="font-bold text-sm text-red-700 sm:text-sm md:text-xl">{title}</h3>
+        <p class="text-justify text-sm sm:text-sm md:text-lg">{desc}</p>
     </div>
     <div >
         <a href="#"> 
-            <img class="object-none rounded-lg h-48 w-96  border-4 border-slate-300 hover:border-red-700" src=`${img}` alt=`imagen ${title}`>
+            <img class="object-none rounded-lg h-56  sm:object-none sm:rounded-lg sm:h-48 sm:w-96 sm:border-4 sm:border-slate-300 md:object-none md:rounded-lg md:h-48 md:w-96 md:border-4 md:border-slate-300 md:hover:border-slate-700" src=`${img}` alt=`imagen ${title}`>
         </a>
     </div>
 </div>
 
-<style>
-    .containerProductsHome{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto;
-        
-    }
-    .containerProductsDiv{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        justify-items: center;
-        align-items: center;
-        margin: 2% 2% 0% 2%;
-    }
-    .containerProductsDiv2{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        justify-items: center;
-        align-items: center;
-        margin:2%
-    }
-
-
-    
-</style>
