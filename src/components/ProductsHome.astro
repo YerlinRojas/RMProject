@@ -6,9 +6,9 @@ import CardProducts2 from "./CardProducts2.astro";
 const data = Data
 ---
 <div>
-<div class="containerProductsHome">
+<div class="containerProductsHome border-t-4">
   
-<h3 class="font-semibold text-2xl text-center"> PRODUCTOS</h3>
+<h3 class="text-center text-sm font-semibold mb-5  sm:text-2xl  md:text-4xl "> PRODUCTOS</h3>
 
 {data.map((product, index) => {
     const esPar = index % 2 === 0;
