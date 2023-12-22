@@ -6,10 +6,10 @@
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "18 unidades por M2",
-        "punteo3" : "Facilidad de corte",
-        "punteo4" : "Resistencia al calor",
-        "punteo5" : "Resistencia al deslizamiento",
-        "punteo6" : "Ecológica",
+        "punteo3" : "Facilidad de corte y pegado",
+        "punteo4" : "Medida: 49x12x3",
+        "punteo5" : "Color: negro, gris topo, gris natural",
+        "punteo6": "",
         "cat": "Revestimientos"
     },
     {
@@ -18,11 +18,11 @@
         "img" :"../public/img_Revestimientos/piedra_irregular1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
-        "punteo2" : "18 unidades por M2",
+        "punteo2" : "10 unidades por M2",
         "punteo3" : "Facilidad de corte",
-        "punteo4" : "Resistencia al calor",
-        "punteo5" : "Resistencia al deslizamiento",
-        "punteo6" : "Ecológica",
+        "punteo4" : "iferentes medidas",
+        "punteo5" : "Color: marron claro, gris topo, negro.",
+        "punteo6": "",
         "cat": "Revestimientos"
     },
     {
@@ -31,11 +31,11 @@
         "img" :"../public/img_Revestimientos/piedra_scala1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
-        "punteo2" : "18 unidades por M2",
+        "punteo2" : "21 unidades por M2",
         "punteo3" : "Facilidad de corte",
-        "punteo4" : "Resistencia al calor",
-        "punteo5" : "Resistencia al deslizamiento",
-        "punteo6" : "Ecológica",
+        "punteo4" : "Medida: 49x9x3",
+        "punteo5" : "Color: beige, marron claro, gris topo",
+        "punteo6": "",
         "cat": "Revestimientos"
     },
     {
@@ -44,11 +44,11 @@
         "img" :"../public/img_Revestimientos/piedra_zapala1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
-        "punteo2" : "18 unidades por M2",
+        "punteo2" : "24 unidades por M2",
         "punteo3" : "Facilidad de corte",
-        "punteo4" : "Resistencia al calor",
-        "punteo5" : "Resistencia al deslizamiento",
-        "punteo6" : "Ecológica",
+        "punteo4" : "Medida: 10x40x2",
+        "punteo5" : "Color: gris claro, gris topo, negro, marron claro.",
+        "punteo6": "",
         "cat": "Revestimientos"
     },
     {
@@ -57,11 +57,11 @@
         "img" :"../public/img_Revestimientos/simil_block1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
-        "punteo2" : "18 unidades por M2",
+        "punteo2" : "12 unidades por M2",
         "punteo3" : "Facilidad de corte",
-        "punteo4" : "Resistencia al calor",
-        "punteo5" : "Resistencia al deslizamiento",
-        "punteo6" : "Ecológica",
+        "punteo4" : "Medida: 20x40x2",
+        "punteo5" : "Color: gris claro, gris topo, negro",
+        "punteo6": "",
         "cat": "Revestimientos"
     },
     {
@@ -70,11 +70,11 @@
         "img" :"../public/img_Revestimientos/simil_laja1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
-        "punteo2" : "18 unidades por M2",
+        "punteo2" : "12 unidades por M2",
         "punteo3" : "Facilidad de corte",
-        "punteo4" : "Resistencia al calor",
-        "punteo5" : "Resistencia al deslizamiento",
-        "punteo6" : "Ecológica",
+        "punteo4" : "Medida: 20x40x2",
+        "punteo5" : "Color: gris claro, marron claro, negro.",
+        "punteo6": "",
         "cat": "Revestimientos"
     },
     {
@@ -83,11 +83,11 @@
         "img" :"../public/img_Revestimientos/simil_travertino1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
-        "punteo2" : "18 unidades por M2",
-        "punteo3" : "Facilidad de corte",
+        "punteo2" : "12 unidades por M2",
+        "punteo3" : "Facilidad de corte y pegado",
         "punteo4" : "Resistencia al calor",
         "punteo5" : "Resistencia al deslizamiento",
-        "punteo6" : "Ecológica",
+        "punteo6" : "",
         "cat": "Revestimientos"
     }
 ]
