@@ -14,7 +14,7 @@ const dataFiltrada = productos.filter((dato)=>{
 <Layout title= {title} >
     <main>
         <BannerProductos title={title}/>
-        <div class="grid grid-cols-5 w-auto min-h-auto gap-5 m-5">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-auto min-h-auto gap-2 lg:gap-5 m-2 lg:m-5">
             {
                 dataFiltrada.map((dato)=>{
                     return <ProdCard title={dato.title} desc={dato.desc} img={dato.img} desc2={dato.desc2} punteo1={dato.punteo1} punteo2={dato.punteo2} punteo3={dato.punteo3} punteo4={dato.punteo4} punteo5={dato.punteo5} punteo6={dato.punteo6}/>

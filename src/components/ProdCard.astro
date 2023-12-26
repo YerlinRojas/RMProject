@@ -40,16 +40,16 @@ const {title, desc, img, desc2, punteo1, punteo2, punteo3, punteo4,punteo5,punte
                 <h3 class="text-3xl font-bold text-gray-900">
                     {title}
                 </h3>
-                <div  class="text-gray-400 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                <div  class="text-gray-400 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center cursor-pointer" data-modal-hide=`${title}`>
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                     </svg>
-                    <span class="sr-only">Close modal</span>
+                    <span class="sr-only ">Close modal</span>
                 </div>
             </div>
             <section class="layout ">
-                <div class="img rounded-lg pl-4">
-                    <img class=" object-fill w-full h-full rounded-lg" src=`${img}` alt=`${title}`>
+                <div class="img rounded-lg p-2 md:pl-4 grid place-items-center ">
+                    <img class=" object-fill h-[80%] w-[80%]  md:w-full md:h-full rounded-lg" src=`${img}` alt=`${title}`>
                 </div>
                 <div class="det p-4  grid place-items-start  ">
                     <span id= "punteo" class="flex items-center text-sm font-medium text-gray-900 me-3"><span class="flex w-2.5 h-2.5 bg-[#EB5D5D] rounded-full me-1.5 flex-shrink-0"></span>{punteo1}</span>
@@ -58,7 +58,7 @@ const {title, desc, img, desc2, punteo1, punteo2, punteo3, punteo4,punteo5,punte
                     <span id= "punteo" class="flex items-center text-sm font-medium text-gray-900 me-3"><span class="flex w-2.5 h-2.5 bg-[#EB5D5D] rounded-full me-1.5 flex-shrink-0"></span>{punteo4}</span>
                     <span id= "punteo" class="flex items-center text-sm font-medium text-gray-900 me-3"><span class="flex w-2.5 h-2.5 bg-[#EB5D5D] rounded-full me-1.5 flex-shrink-0"></span>{punteo5}</span>
                     <span id= "punteo" class="flex items-center text-sm font-medium text-gray-900 me-3"><span class="flex w-2.5 h-2.5 bg-[#EB5D5D] rounded-full me-1.5 flex-shrink-0"></span>{punteo6}</span>
-                    <div class="grid place-items-center w-full">
+                    <div class="grid place-items-center w-full mt-3 md:mt-0">
                         <a href=`https://api.whatsapp.com/send?phone=5491137654344&text=hola,%20¿quiero%20consultar%20por%20${title}` target="_blank" class=" flex justify-center items-center gap-2 px-6 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-3xl hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "><svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.08359 12.2811C2.08305 14.0277 2.54141 15.7328 3.41281 17.2357L2 22.3711L7.27898 20.9931C8.73352 21.7826 10.3712 22.1989 12.0376 22.1995H12.0419C17.53 22.1995 21.9977 17.7532 22 12.289C22.0009 9.64087 20.9659 7.15069 19.0859 5.27745C17.2057 3.40443 14.7057 2.37218 12.0419 2.37109C6.55281 2.37109 2.08578 6.8168 2.08359 12.2811ZM5.22734 16.9769L5.03023 16.6654C4.20164 15.3538 3.7643 13.8381 3.76492 12.2817C3.76672 7.73993 7.47953 4.04484 12.045 4.04484C14.2559 4.04578 16.3337 4.90381 17.8966 6.46058C19.4593 8.01751 20.3192 10.0871 20.3187 12.2884C20.3166 16.8301 16.6037 20.5257 12.0419 20.5257H12.0386C10.5532 20.5249 9.09641 20.1278 7.82594 19.3773L7.52359 19.1988L4.39094 20.0165L5.22734 16.9769Z" fill="white"/>
                             <path d="M9.06187 6.89771C8.83819 6.4044 8.60278 6.39445 8.39006 6.3858C8.21587 6.37836 8.01675 6.37892 7.81781 6.37892C7.61869 6.37892 7.29516 6.45324 7.02169 6.74952C6.74794 7.04608 5.97656 7.76273 5.97656 9.22031C5.97656 10.678 7.04653 12.0866 7.19569 12.2845C7.34503 12.482 9.26128 15.5689 12.2962 16.7564C14.8184 17.7433 15.3317 17.547 15.8791 17.4975C16.4266 17.4482 17.6457 16.7811 17.8944 16.0892C18.1433 15.3975 18.1433 14.8046 18.0687 14.6807C17.9941 14.5572 17.795 14.4831 17.4964 14.335C17.1977 14.1868 15.7297 13.4701 15.4561 13.3712C15.1823 13.2724 14.9833 13.2231 14.7842 13.5198C14.5851 13.8159 14.0133 14.4831 13.839 14.6807C13.6649 14.8787 13.4906 14.9034 13.1921 14.7552C12.8933 14.6065 11.9318 14.2941 10.7909 13.2849C9.90328 12.4996 9.30403 11.5298 9.12984 11.2331C8.95566 10.937 9.11119 10.7764 9.26091 10.6288C9.39506 10.496 9.55959 10.2828 9.70903 10.1099C9.85791 9.93687 9.90759 9.81343 10.0072 9.61585C10.1068 9.41808 10.0569 9.24506 9.98241 9.09687C9.90759 8.94868 9.32737 7.48347 9.06187 6.89771Z" fill="white"/>
@@ -72,7 +72,7 @@ const {title, desc, img, desc2, punteo1, punteo2, punteo3, punteo4,punteo5,punte
                     </div>
                 </div>
                 <!-- <div class="img-se4c"></div> -->
-                <div class="desc px-4 mb-6 ">
+                <div class="desc px-4 md:mb-6 ">
                     <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Descripción</h5>
                     <p>{desc2}</p>
                 </div>
@@ -85,13 +85,27 @@ const {title, desc, img, desc2, punteo1, punteo2, punteo3, punteo4,punteo5,punte
     .layout {
         display: grid;
         grid:
+            "img img img "auto
+            "desc desc desc " auto 
+            "det det det " 1fr;
+        gap: 16px;
+        
+    }
+
+    @media (min-width: 600px ){
+        .layout {
+        display: grid;
+        grid:
             "img img img det det" 1fr
             "img img img det det" 1fr
             "desc desc desc desc desc" auto
             / 1fr 1fr 1fr 1fr 1fr;
         gap: 16px;
+        @media max-width: 600px; {
+            
+        }
     }
-
+    }
     .img { grid-area: img; }
     .det { grid-area: det; }
     .desc { grid-area: desc; }
