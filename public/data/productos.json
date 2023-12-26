@@ -89,5 +89,141 @@
         "punteo5" : "Resistencia al deslizamiento",
         "punteo6" : "",
         "cat": "Revestimientos"
+    },
+    {
+        "title": "Adoquines para césped",
+        "desc": "Ideales para lugares de tránsito y estacionamiento vehicular.",
+        "img" :"../public/img_Cementicios/adoquines_cesped.jpg",
+        "desc2" : " Diseño moderno minimalista mantiene el verde del césped y permite el drenaje del agua evitando la formación de huellas con acumulación de agua y barro.",
+        "punteo2" : "Material de hormigon",
+        "punteo3" : "8 unidades por metro cuadrado",
+        "punteo4" : "Medida 35x35x6",
+        "punteo5" : "Directamente al piso",
+        "punteo6" : "",
+        "cat": "Cementicios"
+    },
+    {
+        "title": "Baldosones",
+        "desc": "Tanto para interiores como exteriores muy resistentes.",
+        "img" :"../public/img_Cementicios/baoldosones.jpg",
+        "desc2" : "Alta resistencia excelente calidad",
+        "punteo2" : "6 unidades por metro cuadrado",
+        "punteo3" : "Medida 40x40x3",
+        "punteo4" : "Directamente al piso",
+        "punteo5" : "Piso de hormigon",
+        "punteo6" : "",
+        "cat": "Cementicios"
+    },
+    {
+        "title": "Durmiente simil madera",
+        "desc": "Utilizado para caminos y delimitaciones",
+        "img" :"../public/img_Cementicios/DurmientesMadera.jpg",
+        "desc2" : "Material de madera",
+        "punteo2" : "Material de hormigón",
+        "punteo3" : "Medida 50x25x6",
+        "punteo4" : "Directamente al piso",
+        "punteo5" : "Apto transito humano",
+        "punteo6" : "",
+        "cat": "Cementicios"
+    },
+    {
+        "title": "Durmiente biselado",
+        "desc": "Utilizado para caminos y delimitaciones",
+        "img" :"../public/img_Cementicios/durmienteBiselado.jpg",
+        "desc2" : "Excelente calidad",
+        "punteo2" : "Material hormigón",
+        "punteo3" : "Medida 1x22x12",
+        "punteo4" : "Directamente al piso",
+        "punteo5" : "Apto transito vehicular",
+        "punteo6" : "",
+        "cat": "Cementicios"
+    },
+    {
+        "title": "Solarium",
+        "desc": "Pisos atérmicos",
+        "img" :"../public/img_Pisos/solarium.jpg",
+        "desc2" : "Pisos atérmicos",
+        "punteo2" : "Piso cementicio blanco",
+        "punteo3" : "6 unidades por metro cuadrado",
+        "punteo4" : "Facilidad de corte y pegado",
+        "punteo5" : "No transmite calor",
+        "punteo6" : "Diversas medidas",
+        "cat": "Pisos"
+    },
+    {
+        "title": "Borde ballena",
+        "desc": "Pisos atérmicos",
+        "img" :"../public/img_Pisos/borde-ballena.jpg",
+        "desc2" : "Pisos atérmicos",
+        "punteo2" : "Piso cementicio blanco",
+        "punteo3" : "6 unidades por metro cuadrado",
+        "punteo4" : "Facilidad de corte y pegado",
+        "punteo5" : "No transmite calor",
+        "punteo6" : "Diversas medidas",
+        "cat": "Pisos"
+    },
+    {
+        "title": "Borde L",
+        "desc": "Pisos atérmicos",
+        "img" :"../public/img_Pisos/borde_L.jpg",
+        "desc2" : "Pisos atérmicos",
+        "punteo2" : "Piso cementicio blanco",
+        "punteo3" : "6 unidades por metro cuadrado",
+        "punteo4" : "Facilidad de corte y pegado",
+        "punteo5" : "No transmite calor",
+        "punteo6" : "Diversas medidas",
+        "cat": "Pisos"
+    },
+    {
+        "title": "Esquineros",
+        "desc": "Pisos atérmicos",
+        "img" :"../public/img_Pisos/esquineros.jpg",
+        "desc2" : "Pisos atérmicos",
+        "punteo2" : "Piso cementicio blanco",
+        "punteo3" : "Facilidad de corte y pegado",
+        "punteo4" : "No transmite calor",
+        "punteo5" : "Diversas medidas",
+        "punteo6" : "",
+        "cat": "Pisos"
+    },
+    {
+        "title": "Arco romano",
+        "desc": "Pisos atérmicos",
+        "img" :"../public/img_Pisos/arco.jpg",
+        "desc2" : "Pisos atérmicos",
+        "punteo2" : "Piso cementicio blanco",
+        "punteo3" : "Facilidad de corte y pegado",
+        "punteo4" : "No transmite calor",
+        "punteo5" : "Diversas medidas",
+        "punteo6" : "",
+        "cat": "Pisos"
+    },
+    {
+        "title": "Arranques",
+        "desc": "Pisos atérmicos",
+        "img" :"../public/img_Pisos/arranque.jpg",
+        "desc2" : "Pisos atérmicos",
+        "punteo2" : "Piso cementicio blanco",
+        "punteo3" : "Facilidad de corte y pegado",
+        "punteo4" : "No transmite calor",
+        "punteo5" : "Diversas medidas",
+        "punteo6" : "",
+        "cat": "Pisos"
+    },
+
+  
+    {
+        "title": "Mesadas",
+        "desc": "Las mesadas de granito natural son una excelente opción a la hora de elegir una piedra para nuestra mesada.",
+        "img" :"../public/img_Mesadas/mesada.jpg",
+        "desc2" : "Es un producto con mucha durabilidad, vienen en diversos tipos de granito, se fabrican a amedidas estándar o especiales. Contamos con servicio de toma de medidas e instalación.",
+        "punteo1" : "Piedra natural",
+        "punteo2" : "Corte estándar o a medida",
+        "punteo3" : "Resistente al calor, rayaduras, golpes",
+        "punteo4" : "Se entrega pulida en su cara",
+        "punteo5" : "",
+        "punteo6" : "",
+        "cat": "Mesadas"
     }
+
 ]
