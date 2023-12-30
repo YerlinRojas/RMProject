@@ -7,16 +7,16 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Preguntas Frecuentes">
-    <main class="2xl:h-[659px]">
+    <main class="flex flex-col">
         <div class="flex flex-col gap-8 justify-center items-start mt-14 mx-10">
             <p class="text-3xl font-bold">Preguntas Frecuentes</p>
             <p class="text-gray-700 font-semibold">Explora nuestras soluciones y, si necesitas más detalles o asesoramiento personalizado, nuestro equipo está a tu disposición. ¡Contá con nosotros para crear espacios excepcionales!</p>
         </div>
-        <div class="grid grid-cols-2 w-full my-10 h-[600px] ">
-            <div class="grid place-items-center p-14 "> 
+        <div class="grid  md:grid-cols-2 w-full my-10 h-auto md:h-[600px] ">
+            <div class="grid place-items-center md:p-14 px-10 "> 
             <Preguntas1>
             </div>
-            <div class="grid place-items-center p-14">
+            <div class="grid place-items-center md:p-14 px-10">
             <Preguntas2>
             </div>
         </div>
