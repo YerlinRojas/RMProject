@@ -18,7 +18,7 @@ const Contact_Form = () => {
 return (
 
     <div className="grid place-items-center mx-7 h-auto ">
-    <p className="w-full px-8">Ponete en contacto para solicitar presupuesto o consultarnos tus dudas. Un asesor responderá a la brevedad</p>
+    <p className="w-full md:px-8 px-4  text-center md:text-justify">Ponete en contacto para solicitar presupuesto o consultarnos tus dudas. Un asesor responderá a la brevedad</p>
 <form className="w-full  px-8 py-4" onSubmit={sendEmail}>
     <div className="mb-5">
         <label htmlFor="nombre" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre y Apellido</label>

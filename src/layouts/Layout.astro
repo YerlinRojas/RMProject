@@ -11,7 +11,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -23,7 +23,7 @@ const { title } = Astro.props;
 	<body>
 		
 		<Navbar/>
-		<slot />
+		<slot/>
 		<BtnWhatsapp/>
 		<Footer/>
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
@@ -40,6 +40,7 @@ const { title } = Astro.props;
 	}
 	body{
 		background-color: rgb(241, 241, 241);
+		
 	}
 
 </style>
