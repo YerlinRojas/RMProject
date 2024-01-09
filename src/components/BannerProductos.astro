@@ -1,13 +1,18 @@
 ---
-interface Props{
-    title : String
+interface Props {
+  title: String;
 }
 
-const {title} = Astro.props
-
+const { title } = Astro.props;
 ---
-<div class="flex items justify-start  w-full h-24 sm:h-40 bg-cover bg-[center_right_-5.7rem] lg:bg-center bg-no-repeat md:justify-start" style="background-image: url(../../public/images-home/Banner-products.png)">
-    <div class="flex items-center sm:ml-10  shadow-sm bg-opacity-80 h-24 sm:h-40">
-        <p class="m-5 text-4xl  md:text-5xl lg:text-6xl font-bold text-slate-100  ">{title}</p>
-    </div>
+
+<div
+  class="flex items justify-start w-full h-24 sm:h-40 bg-cover bg-[center_right_-5.7rem] lg:bg-center bg-no-repeat md:justify-start"
+  style="background-image: url(../../public/images-home/Banner-products.png)"
+>
+  <div class="flex items-center sm:ml-10 shadow-sm bg-opacity-80 h-24 sm:h-40">
+    <p class="m-5 text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100">
+      {title}
+    </p>
+  </div>
 </div>

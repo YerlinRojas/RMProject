@@ -47,7 +47,7 @@ const {title, desc, img, desc2, punteo1, punteo2, punteo3, punteo4,punteo5,punte
                     <span class="sr-only ">Close modal</span>
                 </div>
             </div>
-            <section class="layout ">
+            <section class="layout  ">
                 <div class="img rounded-lg p-2 md:pl-4 grid place-items-center ">
                     <img class=" object-fill h-[80%] w-[80%]  md:w-full md:h-full rounded-lg" src=`${img}` alt=`${title}`>
                 </div>
@@ -85,7 +85,7 @@ const {title, desc, img, desc2, punteo1, punteo2, punteo3, punteo4,punteo5,punte
     .layout {
         display: grid;
         grid:
-            "img img img "auto
+            "img img img " auto
             "desc desc desc " auto 
             "det det det " 1fr;
         gap: 16px;
@@ -115,9 +115,9 @@ const {title, desc, img, desc2, punteo1, punteo2, punteo3, punteo4,punteo5,punte
 const elementosPunteo = document.querySelectorAll('#punteo');
 
 for (let i = 0; i < elementosPunteo.length; i++) {
-  if (elementosPunteo[i].innerText === '') {
-    elementosPunteo[i].style.display = 'none';
-  }
+    if (elementosPunteo[i].textContent === '') {
+    elementosPunteo[i].className = 'hidden';
+}
 }
 
 </script>
