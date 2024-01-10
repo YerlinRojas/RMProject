@@ -1,6 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../../public/Logos-Iconos/Logo-Footer-289-95.png";
+import imgW from "../../public/Logos-Iconos/whatsapp-icon.svg";
+import imgF from "../../public/Logos-Iconos/Icon_facebook.svg";
+import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
 ---
 
 <div class="grid grid-cols-3 bg-black sm:h-40 md:h-48">
@@ -10,7 +13,6 @@ import logo from "../../public/Logos-Iconos/Logo-Footer-289-95.png";
     <!-- logo empresa -->
     <div class="ml-5 sm:ml-5 md:ml-10">
       <Image src={logo} alt="Rusticos Mendoza" class="w-[70%] sm:w-[100%]" />
-      <!--  <img class="w-[70%] sm:w-[100%]"  src="../../public/Logos-Iconos/Logo-Footer-289-95.png" alt="logo_RusticosMendoza"> -->
     </div>
     <!-- ubicacion horarios -->
     <div
@@ -84,11 +86,11 @@ import logo from "../../public/Logos-Iconos/Logo-Footer-289-95.png";
   <!-- rrss -->
   <div class="col-span-1 flex flex-col justify-center items-center">
     <div class="flex flex-row">
-      <img
+      
+      <Image
         class="p-2 w-[-20%] sm:w-[60%] md:w-[100%]"
-        src="../../public/Logos-Iconos/whatsapp-icon.svg"
-        alt=""
-      />
+        src={imgW}
+        alt="Whatsapp"/>
       <a
         href="https://walink.co/444a47"
         target="_blank"
@@ -102,10 +104,10 @@ import logo from "../../public/Logos-Iconos/Logo-Footer-289-95.png";
       >
     </div>
     <div class="flex flex-row">
-      <img
+      <Image
         class="p-2 w-[-30%] sm:w-[60%] md:w-[100%]"
-        src="../../public/Logos-Iconos/Icon_instagram.svg"
-        alt=""
+        src={imgI}
+        alt="Instagram"
       />
       <a
         href="https://www.instagram.com/_rusticosmendoza/"
@@ -120,10 +122,10 @@ import logo from "../../public/Logos-Iconos/Logo-Footer-289-95.png";
       >
     </div>
     <div class="flex flex-row">
-      <img
+      <Image
         class="p-2 w-[-60%] sm:w-[60%] md:w-[100%]"
-        src="../../public/Logos-Iconos/Icon_facebook.svg"
-        alt=""
+        src={imgF}
+        alt="Facebook"
       />
       <a
         href="https://m.facebook.com/profile.php?id=100063704575768#_=_"
