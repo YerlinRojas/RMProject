@@ -1,60 +1,141 @@
 ---
-
+import { Image } from "astro:assets";
+import logo from "../../public/Logos-Iconos/logo-head-187-62.svg";
 ---
 
-<div class="grid grid-cols-3 bg-black sm:h-40 md:h-48"> 
-<div class="col-span-2 flex flex-col sm:flex-row items-center sm:justify-between m-2 sm:ml-4 ">
+<div class="grid grid-cols-3 bg-black sm:h-40 md:h-48">
+  <div
+    class="col-span-2 flex flex-col sm:flex-row items-center sm:justify-between m-2 sm:ml-4"
+  >
     <!-- logo empresa -->
-     <div class="ml-5 sm:ml-5 md:ml-10">
-        <img class="w-[70%] sm:w-[100%]"  src="../../public/Logos-Iconos/Logo-Footer-289-95.png" alt="logo_RusticosMendoza">
+    <div class="ml-5 sm:ml-5 md:ml-10">
+      <Image src={logo} alt="Rusticos Mendoza" class="w-[70%] sm:w-[100%]" />
+      <!--  <img class="w-[70%] sm:w-[100%]"  src="../../public/Logos-Iconos/Logo-Footer-289-95.png" alt="logo_RusticosMendoza"> -->
     </div>
     <!-- ubicacion horarios -->
- <div class="flex flex-col justify-center sm:justify-start sm:items-start m-2">
-        <div class="flex flex-row items-start">
-            <div class="p-2" >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#1E1E1E" stroke="white" stroke-width="2"/>
-                    </svg>
-                           
-            </div>
-            <div>
-                <a href="https://maps.app.goo.gl/v9LbyVCUjUKqVuR1A" target="_blank" class="cursor-pointer" >
-                    <p class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold">Lisandro Moyano 645, Las Heras, Mendoza</p>
-                </a>
-            </div>
+    <div
+      class="flex flex-col justify-center sm:justify-start sm:items-start m-2"
+    >
+      <div class="flex flex-row items-start">
+        <div class="p-2">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+              fill="#1E1E1E"
+              stroke="white"
+              stroke-width="2"></path>
+          </svg>
         </div>
+        <div>
+          <a
+            href="https://maps.app.goo.gl/v9LbyVCUjUKqVuR1A"
+            target="_blank"
+            class="cursor-pointer"
+          >
+            <p
+              class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+            >
+              Lisandro Moyano 645, Las Heras, Mendoza
+            </p>
+          </a>
+        </div>
+      </div>
 
-        <div class="flex flex-row items-start" >  
-            <div class="p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.9939 2C6.47391 2 2.00391 6.48 2.00391 12C2.00391 17.52 6.47391 22 11.9939 22C17.5239 22 22.0039 17.52 22.0039 12C22.0039 6.48 17.5239 2 11.9939 2ZM12.0039 20C7.58391 20 4.00391 16.42 4.00391 12C4.00391 7.58 7.58391 4 12.0039 4C16.4239 4 20.0039 7.58 20.0039 12C20.0039 16.42 16.4239 20 12.0039 20ZM11.7839 7H11.7239C11.3239 7 11.0039 7.32 11.0039 7.72V12.44C11.0039 12.79 11.1839 13.12 11.4939 13.3L15.6439 15.79C15.9839 15.99 16.4239 15.89 16.6239 15.55C16.8339 15.21 16.7239 14.76 16.3739 14.56L12.5039 12.26V7.72C12.5039 7.32 12.1839 7 11.7839 7Z" fill="white"/>
-                    </svg>
-                    
-            </div>
-            <div>
-                <p class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold">Horario de atención</p>
-                <p class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold">Lunes a Viernes de 10 a 18 hs</p>
-                <p class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold">Sábados de 10 a 14 hs</p>
-            </div>
-            
+      <div class="flex flex-row items-start">
+        <div class="p-2">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.9939 2C6.47391 2 2.00391 6.48 2.00391 12C2.00391 17.52 6.47391 22 11.9939 22C17.5239 22 22.0039 17.52 22.0039 12C22.0039 6.48 17.5239 2 11.9939 2ZM12.0039 20C7.58391 20 4.00391 16.42 4.00391 12C4.00391 7.58 7.58391 4 12.0039 4C16.4239 4 20.0039 7.58 20.0039 12C20.0039 16.42 16.4239 20 12.0039 20ZM11.7839 7H11.7239C11.3239 7 11.0039 7.32 11.0039 7.72V12.44C11.0039 12.79 11.1839 13.12 11.4939 13.3L15.6439 15.79C15.9839 15.99 16.4239 15.89 16.6239 15.55C16.8339 15.21 16.7239 14.76 16.3739 14.56L12.5039 12.26V7.72C12.5039 7.32 12.1839 7 11.7839 7Z"
+              fill="white"></path>
+          </svg>
         </div>
-    </div>  
-</div>
-    <!-- rrss -->
-    <div class="col-span-1 flex flex-col justify-center items-center">
-        <div class="flex flex-row">
-            <img class="p-2 w-[-20%] sm:w-[60%] md:w-[100%]" src="../../public/Logos-Iconos/whatsapp-icon.svg" alt="">
-            <a href="https://walink.co/444a47" target="_blank" class="flex flex-row items-center cursor-pointer" > <p class="text-xs text-white sm:text-sm sm:font-semibold md:text-lg md:font-bold">Whatsapp</p></a> 
+        <div>
+          <p
+            class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+          >
+            Horario de atención
+          </p>
+          <p
+            class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+          >
+            Lunes a Viernes de 10 a 18 hs
+          </p>
+          <p
+            class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+          >
+            Sábados de 10 a 14 hs
+          </p>
         </div>
-        <div class="flex flex-row">
-            <img class="p-2 w-[-30%] sm:w-[60%] md:w-[100%]" src="../../public/Logos-Iconos/Icon_instagram.svg" alt="">
-            <a href="https://www.instagram.com/_rusticosmendoza/" target="_blank" class="flex flex-row items-center cursor-pointer cursor-pointer" > <p class="text-white text-xs sm:text-sm sm:font-semibold md:text-lg md:font-bold">Instagram</p></a> 
-        </div>
-        <div class="flex flex-row">
-            <img class="p-2 w-[-60%] sm:w-[60%] md:w-[100%]" src="../../public/Logos-Iconos/Icon_facebook.svg" alt="">
-            <a href="https://m.facebook.com/profile.php?id=100063704575768#_=_" target="_blank" class="flex flex-row items-center cursor-pointer cursor-pointer" > <p class="text-white text-xs sm:text-sm sm:font-semibold md:text-lg md:font-bold">Facebook</p></a> 
-        </div>
-        
+      </div>
     </div>
+  </div>
+  <!-- rrss -->
+  <div class="col-span-1 flex flex-col justify-center items-center">
+    <div class="flex flex-row">
+      <img
+        class="p-2 w-[-20%] sm:w-[60%] md:w-[100%]"
+        src="../../public/Logos-Iconos/whatsapp-icon.svg"
+        alt=""
+      />
+      <a
+        href="https://walink.co/444a47"
+        target="_blank"
+        class="flex flex-row items-center cursor-pointer"
+      >
+        <p
+          class="text-xs text-white sm:text-sm sm:font-semibold md:text-lg md:font-bold"
+        >
+          Whatsapp
+        </p></a
+      >
+    </div>
+    <div class="flex flex-row">
+      <img
+        class="p-2 w-[-30%] sm:w-[60%] md:w-[100%]"
+        src="../../public/Logos-Iconos/Icon_instagram.svg"
+        alt=""
+      />
+      <a
+        href="https://www.instagram.com/_rusticosmendoza/"
+        target="_blank"
+        class="flex flex-row items-center cursor-pointer cursor-pointer"
+      >
+        <p
+          class="text-white text-xs sm:text-sm sm:font-semibold md:text-lg md:font-bold"
+        >
+          Instagram
+        </p></a
+      >
+    </div>
+    <div class="flex flex-row">
+      <img
+        class="p-2 w-[-60%] sm:w-[60%] md:w-[100%]"
+        src="../../public/Logos-Iconos/Icon_facebook.svg"
+        alt=""
+      />
+      <a
+        href="https://m.facebook.com/profile.php?id=100063704575768#_=_"
+        target="_blank"
+        class="flex flex-row items-center cursor-pointer cursor-pointer"
+      >
+        <p
+          class="text-white text-xs sm:text-sm sm:font-semibold md:text-lg md:font-bold"
+        >
+          Facebook
+        </p></a
+      >
+    </div>
+  </div>
 </div>
-

@@ -2,7 +2,7 @@
     {
         "title": "Piedra Ardesia",
         "desc": "Revestimiento cementicio 18 unidades por M2",
-        "img" :"../public/img_Revestimientos/piedra_ardesia1.jpg",
+        "img" :"../img_Revestimientos/piedra_ardesia1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "18 unidades por M2",
@@ -15,7 +15,7 @@
     {
         "title": "Piedra Irregular",
         "desc": "Revestimiento cementicio 18 unidades por M2",
-        "img" :"../public/img_Revestimientos/piedra_irregular1.jpg",
+        "img" :"../img_Revestimientos/piedra_irregular1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "10 unidades por M2",
@@ -28,7 +28,7 @@
     {
         "title": "Piedra Scala",
         "desc": "Revestimiento cementicio 18 unidades por M2",
-        "img" :"../public/img_Revestimientos/piedra_scala1.jpg",
+        "img" :"../img_Revestimientos/piedra_scala1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "21 unidades por M2",
@@ -41,7 +41,7 @@
     {
         "title": "Piedra Zapala",
         "desc": "Revestimiento cementicio 24 unidades por M2",
-        "img" :"../public/img_Revestimientos/piedra_zapala1.jpg",
+        "img" :"../img_Revestimientos/piedra_zapala1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "24 unidades por M2",
@@ -54,7 +54,7 @@
     {
         "title": "Símil Block",
         "desc": "Revestimiento cementicio 12 unidades por M2",
-        "img" :"../public/img_Revestimientos/simil_block1.jpg",
+        "img" :"../img_Revestimientos/simil_block1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "12 unidades por M2",
@@ -67,7 +67,7 @@
     {
         "title": "Símil Laja",
         "desc": "Revestimiento cementicio 12 unidades por M2",
-        "img" :"../public/img_Revestimientos/simil_laja1.jpg",
+        "img" :"../img_Revestimientos/simil_laja1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "12 unidades por M2",
@@ -80,7 +80,7 @@
     {
         "title": "Símil Travertino",
         "desc": "Revestimiento cementicio 12 unidades por M2",
-        "img" :"../public/img_Revestimientos/simil_travertino1.jpg",
+        "img" :"../img_Revestimientos/simil_travertino1.jpg",
         "desc2" : "La ardesia se utiliza en una amplia variedad de aplicaciones, desde techos y revestimientos de paredes hasta pavimentos, encimeras y elementos decorativos. Su versatilidad y resistencia la hacen una elección popular en la construcción y el diseño.",
         "punteo1" : "Revestimiento cementicio",
         "punteo2" : "12 unidades por M2",
@@ -93,7 +93,7 @@
     {
         "title": "Adoquines para césped",
         "desc": "Ideales para lugares de tránsito y estacionamiento vehicular.",
-        "img" :"../public/img_Cementicios/adoquines_cesped.jpg",
+        "img" :"../img_Cementicios/adoquines_cesped.jpg",
         "desc2" : " Diseño moderno minimalista mantiene el verde del césped y permite el drenaje del agua evitando la formación de huellas con acumulación de agua y barro.",
         "punteo2" : "Material de hormigon",
         "punteo3" : "8 unidades por metro cuadrado",
@@ -105,7 +105,7 @@
     {
         "title": "Baldosones",
         "desc": "Tanto para interiores como exteriores muy resistentes.",
-        "img" :"../public/img_Cementicios/baoldosones.jpg",
+        "img" :"../img_Cementicios/baoldosones.jpg",
         "desc2" : "Alta resistencia excelente calidad",
         "punteo2" : "6 unidades por metro cuadrado",
         "punteo3" : "Medida 40x40x3",
@@ -117,7 +117,7 @@
     {
         "title": "Durmiente simil madera",
         "desc": "Utilizado para caminos y delimitaciones",
-        "img" :"../public/img_Cementicios/DurmientesMadera.jpg",
+        "img" :"../img_Cementicios/DurmientesMadera.jpg",
         "desc2" : "Material de madera",
         "punteo2" : "Material de hormigón",
         "punteo3" : "Medida 50x25x6",
@@ -129,7 +129,7 @@
     {
         "title": "Durmiente biselado",
         "desc": "Utilizado para caminos y delimitaciones",
-        "img" :"../public/img_Cementicios/durmienteBiselado.jpg",
+        "img" :"../img_Cementicios/durmienteBiselado.jpg",
         "desc2" : "Excelente calidad",
         "punteo2" : "Material hormigón",
         "punteo3" : "Medida 1x22x12",
@@ -141,7 +141,7 @@
     {
         "title": "Solarium",
         "desc": "Pisos atérmicos",
-        "img" :"../public/img_Pisos/solarium.jpg",
+        "img" :"../img_Pisos/solarium.jpg",
         "desc2" : "Pisos atérmicos",
         "punteo2" : "Piso cementicio blanco",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -153,7 +153,7 @@
     {
         "title": "Borde ballena",
         "desc": "Pisos atérmicos",
-        "img" :"../public/img_Pisos/borde-ballena.jpg",
+        "img" :"../img_Pisos/borde-ballena.jpg",
         "desc2" : "Pisos atérmicos",
         "punteo2" : "Piso cementicio blanco",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -165,7 +165,7 @@
     {
         "title": "Borde L",
         "desc": "Pisos atérmicos",
-        "img" :"../public/img_Pisos/borde_L.jpg",
+        "img" :"../img_Pisos/borde_L.jpg",
         "desc2" : "Pisos atérmicos",
         "punteo2" : "Piso cementicio blanco",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -177,7 +177,7 @@
     {
         "title": "Esquineros",
         "desc": "Pisos atérmicos",
-        "img" :"../public/img_Pisos/esquineros.jpg",
+        "img" :"../img_Pisos/esquineros.jpg",
         "desc2" : "Pisos atérmicos",
         "punteo2" : "Piso cementicio blanco",
         "punteo3" : "Facilidad de corte y pegado",
@@ -189,7 +189,7 @@
     {
         "title": "Arco romano",
         "desc": "Pisos atérmicos",
-        "img" :"../public/img_Pisos/arco.jpg",
+        "img" :"../img_Pisos/arco.jpg",
         "desc2" : "Pisos atérmicos",
         "punteo2" : "Piso cementicio blanco",
         "punteo3" : "Facilidad de corte y pegado",
@@ -201,7 +201,7 @@
     {
         "title": "Arranques",
         "desc": "Pisos atérmicos",
-        "img" :"../public/img_Pisos/arranque.jpg",
+        "img" :"../img_Pisos/arranque.jpg",
         "desc2" : "Pisos atérmicos",
         "punteo2" : "Piso cementicio blanco",
         "punteo3" : "Facilidad de corte y pegado",
@@ -213,7 +213,7 @@
     {
         "title": "Andalucio",
         "desc": "Pisos granito",
-        "img" :"../public/img_Pisos/granito_andalucia.jpg",
+        "img" :"../img_Pisos/granito_andalucia.jpg",
         "desc2" : "Piso granítico",
         "punteo2" : "6 unidades por metro cuadrado",
         "punteo3" : "40x40x2",
@@ -225,7 +225,7 @@
     {
         "title": "Circular",
         "desc": "Pisos granito",
-        "img" :"../public/img_Pisos/exterior_Piso_adoquin_circular_grande.jpg",
+        "img" :"../img_Pisos/exterior_Piso_adoquin_circular_grande.jpg",
         "desc2" : "Pisos granítico",
         "punteo2" : "6 unidades por metro cuadrado",
         "punteo3" : "40x40x2",
@@ -237,7 +237,7 @@
     {
         "title": "Liso",
         "desc": "Pisos granito",
-        "img" :"../public/img_Pisos/interior_Piso_granito_liso.jpg",
+        "img" :"../img_Pisos/interior_Piso_granito_liso.jpg",
         "desc2" : "Pisos granítico",
         "punteo2" : "6 unidades por metro cuadrado",
         "punteo3" : "40x40x2",
@@ -249,7 +249,7 @@
     {
         "title": "16 panes",
         "desc": "Pisos granito",
-        "img" :"../public/img_Pisos/piso_16panes.jpg",
+        "img" :"../img_Pisos/piso_16panes.jpg",
         "desc2" : "Pisos granítico",
         "punteo2" : "6 unidades por metro cuadrado",
         "punteo3" : "40x40x2",
@@ -261,7 +261,7 @@
     {
         "title": "64 panes",
         "desc": "Pisos granito",
-        "img" :"../public/img_Pisos/exterior_Piso_granito_64_panes.jpg",
+        "img" :"../img_Pisos/exterior_Piso_granito_64_panes.jpg",
         "desc2" : "Pisos granítico",
         "punteo2" : "6 unidades por metro cuadrado",
         "punteo3" : "40x40x2",
@@ -273,7 +273,7 @@
     {
         "title": "Adoquin grande",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/adoquinGrande.jpg",
+        "img" :"../img_Pisos/adoquinGrande.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -285,7 +285,7 @@
     {
         "title": "Adoquin chico",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/adoquinChico.jpg",
+        "img" :"../img_Pisos/adoquinChico.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -297,7 +297,7 @@
     {
         "title": "Laja San Luis",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/interior_Piso_laja_san_luis.jpg",
+        "img" :"../img_Pisos/interior_Piso_laja_san_luis.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -309,7 +309,7 @@
     {
         "title": "Piedra San Juan",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/interior_Piso_laja_san_juan.jpg",
+        "img" :"../img_Pisos/interior_Piso_laja_san_juan.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -321,7 +321,7 @@
     {
         "title": "Laja Gregoriana",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/interior_Piso_laja_gregoriana.jpg",
+        "img" :"../img_Pisos/interior_Piso_laja_gregoriana.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -333,7 +333,7 @@
     {
         "title": "Piedra Riojana",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/piedraRiojana.jpg",
+        "img" :"../img_Pisos/piedraRiojana.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -345,7 +345,7 @@
     {
         "title": "Circular grande",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/circularGrande.jpeg",
+        "img" :"../img_Pisos/circularGrande.jpeg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -357,7 +357,7 @@
     {
         "title": "Circular chico",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/circularChico.jpg",
+        "img" :"../img_Pisos/circularChico.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -369,7 +369,7 @@
     {
         "title": "Laja Española",
         "desc": "Pisos rústicos",
-        "img" :"../public/img_Pisos/exterior_Piso_laja_española.jpg",
+        "img" :"../img_Pisos/exterior_Piso_laja_española.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Piso cementicio",
         "punteo3" : "6 unidades por metro cuadrado",
@@ -381,7 +381,7 @@
     {
         "title": "Hidrolaca Lakaplast",
         "desc": "Selladores",
-        "img" :"../public/img_Adhesivos/selladores_Hidrolaca_lakaplast.jpg",
+        "img" :"../img_Adhesivos/selladores_Hidrolaca_lakaplast.jpg",
         "desc2" : "Es una laca poliuretánica tensioactiva hidrorepelente de alta concentración de base acuosa para impermeabilizar, proteger y embellecer  superficies en morteros cementicios, yesos y minerales exterior e interior.",
         "punteo2" : "Por 1 lts de Hidrolaca Lakaplast trata de 4 a 6 m²",
         "punteo3" : "En una 2da. mano puede cubrir entre 10 a 12 m².",
@@ -393,7 +393,7 @@
     {
         "title": "Curador Aquaplast",
         "desc": "Selladores",
-        "img" :"../public/img_Adhesivos/selladores_Curador_aquaplast.jpg",
+        "img" :"../img_Adhesivos/selladores_Curador_aquaplast.jpg",
         "desc2" : "Es Curador  Poliuretánico hidrófugo,  hidrorepelente, acrílico de alta concentración de base acuosa para impermeabilizar, proteger y embellecer superficies en morteros cementicios, yesos y minerales exterior e interior.",
         "punteo2" : "Por 1 lts de Curador Aquaplast trata de 3 a 6 m².",
         "punteo3" : "En una 2da. mano puede cubrir entre 12 a 15 m²",
@@ -405,7 +405,7 @@
     {
         "title": "Impermeabilizante Aquaseal ",
         "desc": "Selladores",
-        "img" :"../public/img_Adhesivos/selladores_Impermeabilizante_aquaseal.jpg",
+        "img" :"../img_Adhesivos/selladores_Impermeabilizante_aquaseal.jpg",
         "desc2" : "Es un impermeabilizante Sellador Siliconado de superficies para uso en pisos y paredes que facilita una segura protección exterior contra las inclemencias del tiempo, lluvia, humedad, adherencia de microorganismos y demás factores atmosféricos que contrarresten la vida útil de paredes pintadas, texturados cementicios y estukos,  revoques, baldosones travertilit de piletas y solárium, piedras naturales y artificiales, bloques de hormigón, etc.",
         "punteo2" : "Por 1 lts de impermeabilizante aquaseal trata de 4 m² en solo una sola mano",
         "punteo3" : "Seca perfectamente en 1 hora.",
@@ -417,7 +417,7 @@
     {
         "title": "Mesadas",
         "desc": "Las mesadas de granito natural son una excelente opción a la hora de elegir una piedra para nuestra mesada.",
-        "img" :"../public/img_Mesadas/mesada.jpg",
+        "img" :"../img_Mesadas/mesada.jpg",
         "desc2" : "Es un producto con mucha durabilidad, vienen en diversos tipos de granito, se fabrican a amedidas estándar o especiales. Contamos con servicio de toma de medidas e instalación.",
         "punteo1" : "Piedra natural",
         "punteo2" : "Corte estándar o a medida",

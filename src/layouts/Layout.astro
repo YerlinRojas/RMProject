@@ -1,48 +1,44 @@
 ---
-import BtnWhatsapp from '../components/BtnWhatsapp.astro';
-import Footer from '../components/Footer.astro';
-import Navbar from '../components/Navbar.astro';
+import BtnWhatsapp from "../components/BtnWhatsapp.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
-
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/icon_logo_marca.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Rusticos Mendoza | {title}</title>
-		</head>
-	<body>
-		
-		<Navbar/>
-		<slot/>
-		<BtnWhatsapp/>
-		<Footer/>
-		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-		
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="./icon_logo_marca.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Rusticos Mendoza | {title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <BtnWhatsapp />
+    <Footer />
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
+  </body>
 </html>
 
 <style is:global>
-	:root {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		scroll-behavior: smooth;
-	}
-	body{
-		background-color: rgb(241, 241, 241);
-		
-	}
-
+  :root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: rgb(241, 241, 241);
+  }
 </style>
-
-

@@ -1,52 +1,69 @@
 ---
+import { Image } from "astro:assets";
+import img1 from "../../public/img_nuestraEmpresa/visionTOP1.jpg";
+import img2 from "../../public/tipo_black.png";
+import img3 from "../../public/icon_logo_marca.svg";
+import img4 from "/public/img_nuestraEmpresa/visionBOTTOM1.jpg";
 ---
-<div >
-    <!-- Imagen superior -->
-    <div>
-        <img class="w-full h-auto" src="/public/img_nuestraEmpresa/visionTOP1.jpg" alt="Visión de la empresa">
-    </div>
+
+<div>
+  <!-- Imagen superior -->
+  <div>
+    <Image class="w-full h-auto" src={img1} alt="Visión de la empresa" />
 
     <!-- Visión y Misión -->
     <div class="bg-white p-4 sm:h-[900px] grid">
-        <div class="place-self-center grid justify-items-center">
-            <!-- Visión -->
-            <div class="m-4 mb-6">
-                <h3 class="text-xl sm:text-2xl text-center mb-6 font-bold">VISIÓN</h3>
-                <p class="text-justify text-sm sm:text-xl">
-                    La empresa Rústicos Mendoza busca, a través de distintos medios, aumentar sus ventas, conseguir nuevos clientes y superar a la competencia. Ser reconocida como una empresa líder de la región del Cuyo, en la elaboración de pisos y revestimientos cementicios, trabajando siempre en los procesos de mejora continua.
-                </p>
-            </div>
-
-            <!-- Misión -->
-            <div class="m-4 mb-6 sm:mt-16">
-                <h3 class="text-center mb-6 text-xl sm:text-2xl font-bold">MISIÓN</h3>
-                <p class="text-justify text-sm sm:text-xl">
-                    Somos una empresa de la provincia de Mendoza, dedicada a la producción y comercialización de pisos y revestimientos que busca satisfacer las necesidades de nuestros clientes, ofreciéndoles un excelente servicio acompañado de una amplia gama de productos con la mejor calidad.
-                </p>
-                <h2 class="text-justify text-sm sm:text-xl mt-4"> Dentro de los principales valores podemos destacar:</h2>
-                <ol class="text-justify text-sm sm:text-xl">
-                    <li>Responsabilidad social y ambiental.</li>
-                    <li>Compromiso constante de cubrir las necesidades de nuestros clientes.</li>
-                    <li>Trabajo en equipo.</li>
-                    <li>Promover la mejora continua.</li>
-                    <li>Formar relaciones de largo plazo con los clientes.</li>
-                </ol>
-            </div>
-
-            <!-- Logos -->
-            <div class="flex flex-row justify-between m-5 sm:m-10 md:m-20 h-10 sm:h-24 md:h-32 w-auto">
-                <img class="object-contain mr-4 opacity-70 drop-shadow-xl" src="../../public/tipo_black.png" alt="">
-                <img class="object-contain drop-shadow-xl" src="../../public/icon_logo_marca.svg" alt="">
-            </div>
+      <div class="place-self-center grid justify-items-center">
+        <!-- Visión -->
+        <div class="m-4 mb-6">
+          <h3 class="text-xl sm:text-2xl text-center mb-6 font-bold">VISIÓN</h3>
+          <p class="text-justify text-sm sm:text-xl">
+            La empresa Rústicos Mendoza busca, a través de distintos medios,
+            aumentar sus ventas, conseguir nuevos clientes y superar a la
+            competencia. Ser reconocida como una empresa líder de la región del
+            Cuyo, en la elaboración de pisos y revestimientos cementicios,
+            trabajando siempre en los procesos de mejora continua.
+          </p>
         </div>
-    </div>
 
-    <!-- Imagen inferior -->
-    <div>
-        <img class="w-full h-auto" src="/public/img_nuestraEmpresa/visionBOTTOM1.jpg" alt="Visión de la empresa">
+        <!-- Misión -->
+        <div class="m-4 mb-6 sm:mt-16">
+          <h3 class="text-center mb-6 text-xl sm:text-2xl font-bold">MISIÓN</h3>
+          <p class="text-justify text-sm sm:text-xl">
+            Somos una empresa de la provincia de Mendoza, dedicada a la
+            producción y comercialización de pisos y revestimientos que busca
+            satisfacer las necesidades de nuestros clientes, ofreciéndoles un
+            excelente servicio acompañado de una amplia gama de productos con la
+            mejor calidad.
+          </p>
+          <h2 class="text-justify text-sm sm:text-xl mt-4">
+            Dentro de los principales valores podemos destacar:
+          </h2>
+          <ol class="text-justify text-sm sm:text-xl">
+            <li>Responsabilidad social y ambiental.</li>
+            <li>
+              Compromiso constante de cubrir las necesidades de nuestros
+              clientes.
+            </li>
+            <li>Trabajo en equipo.</li>
+            <li>Promover la mejora continua.</li>
+            <li>Formar relaciones de largo plazo con los clientes.</li>
+          </ol>
+        </div>
+
+        <!-- Logos -->
+        <div
+          class="flex flex-row justify-between m-5 sm:m-10 md:m-20 h-10 sm:h-24 md:h-32 w-auto"
+        >
+          <Image
+            class="object-contain mr-4 opacity-70 drop-shadow-xl"
+            src={img2}
+            alt=""
+          />
+          <Image class="object-contain drop-shadow-xl" src={img3} alt="" />
+        </div>
+      </div>
     </div>
+    <Image class="w-full h-auto" src={img4} alt="Visión de la empresa" />
+  </div>
 </div>
-
-
-
-
