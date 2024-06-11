@@ -2,6 +2,7 @@
 import BtnWhatsapp from "../components/BtnWhatsapp.astro";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+
 interface Props {
   title: string;
 }
@@ -43,8 +44,14 @@ const { title } = Astro.props;
     <slot />
     <BtnWhatsapp />
     <Footer />
+     <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
   </body>
 </html>
+
+
 
 <style is:global>
   :root {
