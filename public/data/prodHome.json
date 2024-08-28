@@ -10,7 +10,7 @@
     "id": "containerProductsDiv-1",
     "title": "Cementicios",
     "desc": "Los productos cementicios son esenciales para proyectos de construcción y remodelación. Ofrecemos una variedad de opciones de cemento de alta calidad, desde morteros y adhesivos hasta revestimientos impermeables y morteros autonivelantes, ideales para cualquier aplicación.",
-    "img": "../images-home/12.jpg",
+    "img": "../images-home/grilla_cesped.jpg",
     "link": "../productos/cementicios"
     },
     {
@@ -33,5 +33,19 @@
     "desc": "Nuestra colección de pisos ofrece una amplia gama de opciones para cada rincón de tu hogar. Desde suelos que aportan calidez en el interior de tu hogar hasta elegantes pisos de exterior, tenemos la solución perfecta para ti.",
     "img": "../images-home/piso_exterior1.jpg",
     "link": "../productos/pisos"
+    },
+    {
+        "id": "containerProductsDiv-3",
+        "title": "Selladores",
+        "desc": "Encuentra selladores de alta calidad para la construcción. Tenemos una amplia gama de selladores para elegir.",
+        "img": "../images-home/selladores1.jpg",
+        "link": "../productos/selladores"
+    },
+    {
+        "id": "containerProductsDiv-0",
+        "title": "Zócalos",
+        "desc": " El zócalo es un listón de madera, cerámica, porcelana u otros materiales que se coloca a ras del suelo en la parte inferior de las parede. Descubrí la variedad de Zócalos que tenemos para vos.",
+        "img": "../images-home/img_zocalos4.jpg",
+        "link": "../productos/zocalos"
     }
     ]
