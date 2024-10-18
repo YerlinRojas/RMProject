@@ -211,7 +211,7 @@
         "punteo6" : "",
         "cat": "Pisos"
     },
-    {
+     {
         "title": "Circular",
         "desc": "Piso rustico",
         "img" :"../img_Pisos/exterior_Piso_adoquin_circular_grande.jpg",
@@ -222,7 +222,7 @@
         "punteo5" : "Color de base: gris claro, gris topo, negro, rojo.",
         "punteo6" : "",
         "cat": "Pisos"
-    },
+    }, 
     {
         "title": "Liso",
         "desc": "Pisos granito",
@@ -383,6 +383,18 @@
         "title": "Baldosa 20x20",
         "desc": "Pisos rústicos",
         "img" :"../img_Pisos/baldosa_20x20.jpg",
+        "desc2" : "Pisos rústicos",
+        "punteo2" : "Baldosa clásica",
+        "punteo3" : "25 unidades por metro cuadrado",
+        "punteo4" : "Medida 20x20 varios colores",
+        "punteo5" : "",
+        "punteo6" : "",
+        "cat": "Pisos"
+    },
+    {
+        "title": "Ladrillo cruzado",
+        "desc": "Pisos rústicos",
+        "img" :"../img_Pisos/ladrillo_cruzado.jpg",
         "desc2" : "Pisos rústicos",
         "punteo2" : "Baldosa clásica",
         "punteo3" : "25 unidades por metro cuadrado",
