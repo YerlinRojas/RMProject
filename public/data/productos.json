@@ -128,21 +128,9 @@
         "cat": "Cementicios"
     },
     {
-        "title": "Durmiente simil madera",
-        "desc": "Utilizado para caminos y delimitaciones",
-        "img" :"../img_Cementicios/DurmientesMadera.jpg",
-        "desc2" : "Material de madera",
-        "punteo2" : "Material de hormigón",
-        "punteo3" : "Medida 50x25x6",
-        "punteo4" : "Directamente al piso",
-        "punteo5" : "Apto transito humano",
-        "punteo6" : "",
-        "cat": "Cementicios"
-    },
-    {
         "title": "Durmiente biselado",
         "desc": "Utilizado para caminos y delimitaciones",
-        "img" :"../img_Cementicios/durmienteBiselado.jpg",
+        "img" :"../img_Cementicios/durmiente_nuevo.jpge",
         "desc2" : "Excelente calidad",
         "punteo2" : "Material hormigón",
         "punteo3" : "Medida 1x22x12",
