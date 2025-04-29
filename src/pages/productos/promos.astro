@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Data from "../../../public/data/promos.json";
+import CardPromo from "../../components/CardPromo.astro";
+import BannerPromo from "../../components/BannerPromo.astro";
+import PromoSec from "../../components/PromoSec.astro";
+
+const title = "Promos";
+const productos = Data;
+
+const dataFiltrada = productos.filter((dato) => {
+  return dato.cat === title;
+});
+---
+
+<Layout title={title}>
+  <main class="min-h-screen">
+    <BannerPromo />
+
+    <div class="w-full min-h-screen flex flex-col items-center justify-center bg-[#FFF0F0] box-border">
+      <PromoSec
+        slides={dataFiltrada.map((dato) => ({
+          img: dato.img,
+          link: dato.link
+        }))}
+      />
+    </div>
+  </main>
+</Layout>

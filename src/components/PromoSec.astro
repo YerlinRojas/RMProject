@@ -1,0 +1,81 @@
+---
+interface Props {
+  slides: {
+    img: string;
+    link: string;
+  }[];
+}
+
+const { slides } = Astro.props;
+---
+
+<section class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-xl shadow-xl group">
+  <!-- Carrusel de imágenes -->
+  <div class="relative w-full" style="aspect-ratio: 1280 / 373;">
+    <div id="carousel" class="flex w-full h-full transition-transform duration-700 ease-in-out" style="transform: translateX(0%)">
+      {slides.map(({ img, link }) => (
+        <a href={link} target="_blank" rel="noopener noreferrer" class="w-full h-full flex-shrink-0">
+          <img src={img} alt="Promo fondo" class="w-full h-full object-cover" />
+        </a>
+      ))}
+    </div>
+
+    <!-- Botón Anterior -->
+    <button 
+      id="prevBtn"
+      class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 hidden group-hover:block"
+    >
+      ‹
+    </button>
+
+    <!-- Botón Siguiente -->
+    <button 
+      id="nextBtn"
+      class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 hidden group-hover:block"
+    >
+      ›
+    </button>
+  </div>
+</section>
+
+<script is:inline>
+  let index = 0;
+  const intervalTime = 4000;
+  let intervalId;
+
+  const carousel = document.getElementById('carousel');
+  const slides = carousel.querySelectorAll('a');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  function showSlide(i) {
+    carousel.style.transform = `translateX(-${i * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  intervalId = setInterval(nextSlide, intervalTime);
+
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+  });
+
+  function resetInterval() {
+    clearInterval(intervalId);
+    intervalId = setInterval(nextSlide, intervalTime);
+  }
+</script>

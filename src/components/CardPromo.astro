@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  desc: string;
+  img: string;
+  desc2?: string;
+  punteos?: string[];
+  link?: string;
+}
+
+const { title, desc, img, desc2, punteos = [], link = "/ofertas" } = Astro.props;
+---
+.<!-- ESTE COMPONENTE NO ESTA EN USO, SE DEJA PARA ESCALABILIDAD -->
+
+<div class="w-full max-w-sm bg-[#FFF0F0] border border-[#EB5D5D] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+  <div class="flex flex-col items-center justify-center p-5 relative">
+    
+    <!-- Banda de promoción -->
+    <div class="absolute top-0 left-0 bg-[#EB5D5D] text-white text-xs font-bold px-3 py-1 rounded-br-lg">
+      PROMO
+    </div>
+
+    <!-- Título -->
+    <h5 class="text-2xl font-extrabold text-[#EB5D5D] text-center mb-2">{title}</h5>
+
+    <!-- Imagen del producto -->
+    <img 
+      class="w-40 h-28 object-cover rounded-md shadow-md my-3" 
+      src={img} 
+      alt={`Imagen del producto ${title}`} 
+    />
+
+    <!-- Descripción breve -->
+    <span class="text-sm text-gray-700 text-center italic mb-3">{desc}</span>
+
+    <!-- Descripción ampliada -->
+    {desc2 && <p class="text-xs text-gray-600 text-center mb-3">{desc2}</p>}
+
+    <!-- Lista de punteos -->
+    <ul class="text-sm text-gray-800 list-disc list-inside mb-4">
+      {punteos.map((item) => item && <li>{item}</li>)}
+    </ul>
+
+    <!-- Botón que redirige -->
+    <a 
+      href={link} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="inline-flex items-center px-6 py-2 text-sm font-semibold text-white bg-[#EB5D5D] rounded-3xl hover:bg-red-600 transition focus:ring-4 focus:outline-none focus:ring-red-300 shadow"
+      aria-label={`Ver oferta de ${title}`}
+    >
+      ¡VER OFERTA!
+    </a>
+  </div>
+</div>
