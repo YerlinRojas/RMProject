@@ -1,0 +1,32 @@
+---
+interface Material {
+  nombre: string;
+  detalle: string;
+  imagen: string;
+}
+
+interface Categoria {
+  categoria: string;
+  materiales: Material[];
+}
+
+const { categoria, onSelect } = Astro.props as {
+  categoria: Categoria;
+  onSelect: (url: string) => void;
+};
+---
+
+<div class="mb-6">
+  <h4 class="text-md font-bold mb-2">{categoria.categoria}</h4>
+  <div class="flex flex-col gap-3">
+    {categoria.materiales.map((mat) => (
+      <button
+        class="flex flex-col items-center cursor-pointer border-none bg-transparent"
+        onclick={() => window.setTexture?.(mat.imagen)}
+      >
+        <img src={mat.imagen} alt={mat.nombre} class="w-24 rounded border border-gray-300" />
+        <span class="text-sm mt-1">{mat.nombre}</span>
+      </button>
+    ))}
+  </div>
+</div>

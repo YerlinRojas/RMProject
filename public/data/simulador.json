@@ -1,0 +1,48 @@
+[
+    {
+      "categoria": "pisos exterior",
+      "materiales": [
+        {
+          "nombre": "Revestimiento 1",
+          "detalle": "Este es el detalle del revestimiento 1",
+          "imagen": "/img_base_textura/revestimiento1/revestimiento_1_BLA.png"
+        },
+        {
+          "nombre": "Revestimiento 2",
+          "detalle": "Este es el detalle del revestimiento 2",
+          "imagen": "img_base_textura/revestimiento1/revestimiento_1_GRI.png"
+        }
+      ]
+    },
+    {
+      "categoria": "paredes interior",
+      "materiales": [
+        {
+          "nombre": "Revestimiento Interior 1",
+          "detalle": "Detalle del revestimiento interior 1",
+          "imagen": "/texturas/interior1.jpg"
+        },
+        {
+          "nombre": "Revestimiento Interior 2",
+          "detalle": "Detalle del revestimiento interior 2",
+          "imagen": "/texturas/interior2.jpg"
+        }
+      ]
+    },
+    {
+      "categoria": "fachadas",
+      "materiales": [
+        {
+          "nombre": "Fachada Piedra",
+          "detalle": "Ideal para exterior con estilo rústico",
+          "imagen": "/texturas/fachada_piedra.jpg"
+        },
+        {
+          "nombre": "Fachada Moderna",
+          "detalle": "Diseño moderno y minimalista",
+          "imagen": "/texturas/fachada_moderna.jpg"
+        }
+      ]
+    }
+  ]
+  
