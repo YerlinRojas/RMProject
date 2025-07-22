@@ -3,6 +3,7 @@ import ProdCard from "../../components/ProdCard.astro";
 import Layout from "../../layouts/Layout.astro";
 import Data from "../../../public/data/productos.json";
 import BannerProductos from "../../components/BannerProductos.astro";
+import ProdCard2 from "../../components/ProdCard2.astro";
 const title = "Mesadas";
 
 const productos = Data;
@@ -20,10 +21,12 @@ const dataFiltrada = productos.filter((dato) => {
       {
         dataFiltrada.map((dato) => {
           return (
-            <ProdCard
+            <ProdCard2
               title={dato.title}
               desc={dato.desc}
               img={dato.img}
+              img1={dato.img1}
+              img2={dato.img2}
               desc2={dato.desc2}
               punteo1={dato.punteo1 as String}
               punteo2={dato.punteo2}

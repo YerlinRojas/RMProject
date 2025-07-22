@@ -19,3 +19,11 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+
+#texturas
+src/components/TextureMenu.astro
+src/components/TextureViewer.astro
+src/components/React_Components/Mesadas.jsx
+src/pages/simulador.astro
+src/pages/contacto.astro

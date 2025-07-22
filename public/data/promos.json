@@ -1,19 +1,19 @@
 [
     {
-      "title": "Ofertas Vigentes",
-      "img" : "../banner_promo/banner_oferta1.png",
+      "title": "OFERTAS",
+      "img" : "../banner_promo/ofertas_banner_1.jpg",
       "link": "https://mdzonline.com.ar/rusticosmendoza/",
       "cat": "Promos"
     },
     {
-      "title": "Ofertas Vigentes",
-      "img" : "../banner_promo/banner_oferta2.png",
+      "title": "CÁTALOGO",
+      "img" : "../banner_promo/catalogo_banner.jpg",
       "link": "https://drive.google.com/file/d/1sOqsLSzZj_Utfm1kwAZTXVZ4c7Pysc3G/view?usp=sharing",
       "cat": "Promos"
     },
     {
-      "title": "Ofertas mensuales",
-      "img" : "../banner_promo/banner_oferta4.png",
+      "title": "PRODUCTOS",
+      "img" : "../banner_promo/productos_banner_1.jpg",
       "link": "https://rusticosmendoza.ar",
       "cat": "Promos"
     }

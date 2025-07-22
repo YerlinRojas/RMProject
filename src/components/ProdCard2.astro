@@ -1,0 +1,190 @@
+---
+interface Props{
+    title : String;
+    desc : String;
+    desc2 : String;
+    img : String,
+    img1: String,
+    img2 : String
+
+}
+
+const {title, desc, img, img1, img2, desc2} = Astro.props
+
+---
+
+
+<div class="w-full max-w-[180px] rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-105 hover:shadow-lg">
+  <div class="flex flex-col items-center justify-center p-2">
+    
+    <a data-modal-target=`${title}` data-modal-toggle=`${title}`>
+      <img 
+        class="w-32 h-32 object-cover rounded transition duration-300 ease-in-out" 
+        src=`${img}` 
+        alt=`${title}` 
+      />
+    </a>
+    
+    <h5 class="text-sm font-light tracking-wide text-center text-gray-800 dark:text-gray-200 mt-2">
+      {title}
+    </h5>
+    
+  </div>
+</div>
+
+
+
+<div id=`${title}` tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-6xl max-h-full">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg flex flex-col md:flex-row overflow-hidden">
+
+      <!-- Carrusel grande al lado izquierdo -->
+      <div class="md:w-3/5 w-full">
+        <div id="controls-carousel" class="relative w-full h-full" data-carousel="static">
+          <div class="relative h-72 md:h-[500px] overflow-hidden">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src=`${img1}` class="absolute block w-full h-full object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" alt=`${title}`>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+              <img src=`${img2}` class="absolute block w-full h-full object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" alt=`${title}`>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
+              <svg class="w-4 h-4 text-white dark:text-gray-800" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg>
+            </span>
+          </button>
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
+              <svg class="w-4 h-4 text-white dark:text-gray-800" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Lado derecho con muestra + texto + botón -->
+      <div class="md:w-2/5 w-full p-6 flex flex-col justify-start items-center gap-6">
+        <!-- Imagen muestra -->
+        <img src=`${img}` alt=`${title}` class="w-40 h-40 object-cover border border-gray-300 rounded shadow" />
+
+        <!-- Texto -->
+        <div class="text-center">
+          <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">{title}</h2>
+          <p class="text-gray-700 dark:text-gray-300 text-sm">{desc2}</p>
+        </div>
+
+        <!-- Botón -->
+        <a href=`https://api.whatsapp.com/send?phone=5492613622105&text=Hola%20Rústicos%20Mendoza,%20quiero%20consultar%20por%20${title}.` target="_blank" class="mt-4 flex justify-center items-center gap-2 px-6 py-2 text-sm font-medium text-white bg-green-600 rounded-3xl hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.08359 12.2811C2.08305 14.0277 2.54141 15.7328 3.41281 17.2357L2 22.3711L7.27898 20.9931C8.73352 21.7826 10.3712 22.1989 12.0376 22.1995H12.0419C17.53 22.1995 21.9977 17.7532 22 12.289C22.0009 9.64087 20.9659 7.15069 19.0859 5.27745C17.2057 3.40443 14.7057 2.37218 12.0419 2.37109C6.55281 2.37109 2.08578 6.8168 2.08359 12.2811Z"/>
+            <path d="M9.06187 6.89771C8.83819 6.4044 8.60278 6.39445 8.39006 6.3858..." />
+          </svg>
+          CONSULTAR
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+ 
+<!-- <style>
+    .layout {
+        display: grid;
+        grid:
+            "img img img " auto
+            "desc desc desc " auto 
+            "det det det " 1fr;
+        gap: 16px;
+        
+    }
+
+    @media (min-width: 600px ){
+        .layout {
+        display: grid;
+        grid:
+            "img img img det det" 1fr
+            "img img img det det" 1fr
+            "desc desc desc desc desc" auto
+            / 1fr 1fr 1fr 1fr 1fr;
+        gap: 16px;
+        @media max-width: 600px; {
+            
+        }
+    }
+    }
+    .img { grid-area: img; }
+    .det { grid-area: det; }
+    .desc { grid-area: desc; }
+</style>
+ -->
+
+ <style>
+    .layout {
+        display: grid;
+        grid:
+            "img img img " auto
+            "desc desc desc " auto 
+            "det det det " 1fr;
+        gap: 16px;
+    }
+
+    @media (min-width: 600px) {
+        .layout {
+            display: grid;
+            grid:
+                "img img img det det" 1fr
+                "img img img det det" 1fr
+                "desc desc desc desc desc" auto
+                / 1fr 1fr 1fr 1fr 1fr;
+            gap: 16px;
+        }
+    }
+
+    .img { grid-area: img; }
+    .det { grid-area: det; }
+    .desc { grid-area: desc; }
+</style>
+
+<script is:inline>
+const elementosPunteo = document.querySelectorAll('#punteo');
+
+for (let i = 0; i < elementosPunteo.length; i++) {
+    if (elementosPunteo[i].textContent === '') {
+    elementosPunteo[i].className = 'hidden';
+}
+}
+  const carousel = document.getElementById('carousel-images');
+    const images = carousel.querySelectorAll('.carousel-image');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('hidden', i !== index);
+        });
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
+
+    // Mostrar la primera imagen al iniciar
+    showImage(currentIndex);
+</script>

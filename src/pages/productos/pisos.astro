@@ -2,7 +2,6 @@
 import ProdCard from "../../components/ProdCard.astro";
 import Layout from "../../layouts/Layout.astro";
 import Data from "../../../public/data/productos.json";
-import BannerProductos from "../../components/BannerProductos.astro";
 const title = "Pisos";
 
 const productos = Data;
@@ -13,28 +12,81 @@ const dataFiltrada = productos.filter((dato) => {
 
 <Layout title={title}>
   <main class="min-h-screen">
-    <BannerProductos title={title} />
-    <div
-      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-auto min-h-auto gap-2 lg:gap-5 m-2 lg:m-5"
-    >
-      {
-        dataFiltrada.map((dato) => {
-          return (
-            <ProdCard
-              title={dato.title}
-              desc={dato.desc}
-              img={dato.img}
-              desc2={dato.desc2}
-              punteo1={dato.punteo1 as String}
-              punteo2={dato.punteo2}
-              punteo3={dato.punteo3}
-              punteo4={dato.punteo4}
-              punteo5={dato.punteo5}
-              punteo6={dato.punteo6}
-            />
-          );
-        })
-      }
-    </div>
-  </main>
+
+    <div class="flex flex-col md:flex-row w-full h-screen overflow-hidden">
+
+
+  <div class="relative group w-full md:w-1/3 h-1/3 md:h-full transition-all duration-500 ease-in-out hover:md:w-[60%]">
+  <!-- Fondo -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../images-home/pisos_categorias_compactos.jpg');"></div>
+
+  <!-- Título con cambio de alineación y sombra en hover -->
+  <div class="absolute inset-0 z-10 flex items-center justify-center group-hover:justify-start transition-all duration-300 p-4">
+    <a
+      href="../productos/pisosPremium"
+    > 
+    <h2 class="text-white text-2xl md:text-3xl font-bold text-shadow-xl transition-colors duration-300 group-hover:bg-[#c14d2e] rounded-lg p-4">
+      COMPACTOS<br>PREMIUM
+    </h2>
+    </a>
+  </div>
+
+  <!-- Descripción desplegable -->
+  <div class="hidden md:group-hover:flex absolute top-0 right-0 w-[40%] h-full bg-[#c14d2e] text-white p-8 flex-col justify-center">
+    <p class="text-lg leading-relaxed mb-4">Los pisos Compactos Premium son solo los indicados para los más exigentes.</p>
+  </div>
+</div>
+
+
+
+  <div class="relative group w-full md:w-1/3 h-1/3 md:h-full transition-all duration-500 ease-in-out hover:md:w-[60%]">
+  <!-- Fondo -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../images-home/pisos_categorias_granitico.jpg');"></div>
+
+  <!-- Título con cambio de alineación y sombra en hover -->
+  <div class="absolute inset-0 z-10 flex items-center justify-center group-hover:justify-start transition-all duration-300 p-4">
+    <a
+      href="../productos/pisosGraniticos"
+    > 
+    <h2 class="text-white text-2xl md:text-3xl font-bold text-shadow-xl transition-colors duration-300 group-hover:bg-[#c14d2e] rounded-lg p-4">
+      GRANÍTICOS
+    </h2>
+    </a>
+  </div>
+
+  <!-- Descripción desplegable -->
+  <div class="hidden md:group-hover:flex absolute top-0 right-0 w-[40%] h-full bg-[#c14d2e] text-white p-8 flex-col justify-center">
+    <p class="text-lg leading-relaxed mb-4">Resistencia y diseño que perduran en el tiempo, ideales para exteriores e interiores.</p>
+  </div>
+</div>
+
+
+ <div class="relative group w-full md:w-1/3 h-1/3 md:h-full transition-all duration-500 ease-in-out hover:md:w-[60%]">
+  <!-- Fondo -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../images-home/pisos_categorias_rusticos.jpg');"></div>
+
+  <!-- Título con cambio de alineación y sombra en hover -->
+  <div class="absolute inset-0 z-10 flex items-center justify-center group-hover:justify-start transition-all duration-300 p-4">
+    <a
+      href="../productos/pisosRusticos"
+    > 
+    <h2 class="text-white text-2xl md:text-3xl font-bold text-shadow-xl transition-colors duration-300 group-hover:bg-[#c14d2e] rounded-lg p-4">
+      RÚSTICOS
+    </h2>
+    </a>
+  </div>
+
+  <!-- Descripción desplegable -->
+  <div class="hidden md:group-hover:flex absolute top-0 right-0 w-[40%] h-full bg-[#c14d2e] text-white p-8 flex-col justify-center">
+    <p class="text-lg leading-relaxed mb-4">Perfectos para espacios naturales y cálidos. Diseño tradicional con fuerza.</p>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+  
+
+</main>
 </Layout>

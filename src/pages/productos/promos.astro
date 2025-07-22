@@ -14,12 +14,13 @@ const dataFiltrada = productos.filter((dato) => {
 ---
 
 <Layout title={title}>
-  <main class="min-h-screen">
-    <BannerPromo />
+  <main class="min-h-screen  ">
+    <!-- <BannerPromo /> -->
 
-    <div class="w-full min-h-screen flex flex-col items-center justify-center bg-[#FFF0F0] box-border">
+    <div class="">
       <PromoSec
         slides={dataFiltrada.map((dato) => ({
+          title : dato.title,
           img: dato.img,
           link: dato.link
         }))}
