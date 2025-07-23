@@ -1063,6 +1063,20 @@
         "punteo5": "",
         "punteo6": "",
         "cat": "Mesadas"
+    },
+    {
+        "title": "Todos los modelos",
+        "desc": "Granito",
+        "img": "../img_Mesadas/img_muestra/muestras_todos.jpg",
+        "img1": "../img_Mesadas/img_render/muestras_todas_.jpg",
+        "img2": "../img_Mesadas/img_render/muestras_todas.jpg",
+        "desc2": "Consulta por todos nuestros modelos disponibles",
+        "punteo1": "",
+        "punteo2": "",
+        "punteo3": "",
+        "punteo4": "",
+        "punteo5": "",
+        "punteo6": "",
+        "cat": "Mesadas"
     }
-    
 ]
