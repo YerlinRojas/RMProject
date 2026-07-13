@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PresupuestoGrid from "../components/PresupuestoGrid.astro";
+
+const slides = [
+  {
+    title: "Pisos",
+    img: "../img_presupuesto/pisos_presupuesto.png",
+    link: "https://wavestudio-design.web.app/PISOS.html",
+  },
+  {
+    title: "Revestimientos",
+    img: "../img_presupuesto/revestimiento_presupuesto1.png",
+    link: "https://wavestudio-design.web.app/REVESTIMIENTOS.html",
+  },
+  {
+    title: "Mesadas",
+    img: "../img_presupuesto/mesadas_presupuesto.png",
+    link: "https://wavestudio-design.web.app/MESADAS.HTML",
+  },
+];
+---
+
+<Layout title="Presupuestos">
+
+<section class="min-h-screen bg-neutral-100 py-16">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-12">
+
+            <h1 class="text-5xl font-bold text-gray-900">
+                Presupuestos
+            </h1>
+
+            <p class="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+                Elegí la categoría que querés cotizar y accederás al calculador de presupuestos.
+            </p>
+
+        </div>
+
+        <PresupuestoGrid slides={slides} />
+
+    </div>
+
+</section>
+
+</Layout>

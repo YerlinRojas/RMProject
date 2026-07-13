@@ -4,7 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import Data from "../../../public/data/productos.json";
 import BannerProductos from "../../components/BannerProductos.astro";
 import ProdCard2 from "../../components/ProdCard2.astro";
-const title = "PisosGraniticos";
+const title = "pisosCalcareos";
 
 const productos = Data;
 const dataFiltrada = productos.filter((dato) => {
@@ -14,7 +14,7 @@ const dataFiltrada = productos.filter((dato) => {
 
 <Layout title={title}>
   <main class="min-h-screen">
-    <BannerProductos title={"Pisos Graníticos"} />
+    <BannerProductos title={title} />
     <div
       class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-auto min-h-auto gap-2 lg:gap-5 m-2 lg:m-5"
     >
