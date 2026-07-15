@@ -134,11 +134,11 @@
         "cat": "Línea Jardín"
     },
     {
-        "title": "Durmiente simil madera",
+        "title": "Durmiente Simil Madera",
         "desc": "Utilizado para caminos y delimitaciones",
         "img": "../img_lineaJardin/durmienteSimilMadera.png",
-        "img1":"../img_lineaJardin/durmienteSimilMadera2.png",
-        "img2": "",
+        "img1":"../img_lineaJardin/durmienteSimilMadera3.png",
+        "img2": "../img_lineaJardin/durmienteSimilMadera2.png",
         "desc2": "Excelente calidad",
         "punteo2": "Material: hormigón",
         "punteo3": "Medida 1x25x5 y 50X24X6 cm con estructura de hierro",
@@ -420,22 +420,7 @@
         "punteo6": "",
         "cat": "PisosGraniticos"
     },
-  {
-    "title": "Circular",
-    "desc": "Piso rústico",
-    "img": "../img_Pisos/exterior_Piso_adoquin_circular_grande.jpg",
-    "img1":"../img_Pisos/exterior_Piso_adoquin_circular_grande.jpg",
-    "img2":"",
-    "desc2": "Pisos graníticos",
-    "punteo1": "Pisos Rústicos",
-    "punteo2": "6 unidades por metro cuadrado",
-    "punteo3": "40x40x2",
-    "punteo4": "Facilidad de corte y pegado",
-    "punteo5": "Color de base: gris claro, gris topo, negro, rojo.",
-    "punteo6": "",
-    "cat": "PisosRusticos"
-  },
-  {
+    {
     "title": "Adoquín grande",
     "desc": "Pisos rústicos",
     "img": "../img_Pisos/adoquinGrande.jpg",
@@ -631,11 +616,11 @@
     "cat": "PisosAtermicos"
   },
   {
-    "title": "Pisos Calcáreos",
+    "title": "Baldosa Lisa",
     "desc": "Pisos calcáreos",
-    "img": "../img_Pisos/calcareas2.png",
-    "img1":"../img_Pisos/calcareas3.png",
-    "img2":"../img_Pisos/calcareas4.png",
+    "img": "../img_Pisos/baldosa_lisa.png",
+    "img1":"../img_Pisos/baldosa_lisa.png",
+    "img2":"",
     "desc2": "",
     "punteo1": "Medidas 20X20 y 25X25",
     "punteo2": "Diversos colores y modelos",
@@ -646,13 +631,13 @@
     "cat": "pisosCalcareos"
   },
   {
-    "title": "Pisos Calcáreos más modelos",
+    "title": "Baldosa Cocodrilo",
     "desc": "Pisos calcáreos",
-    "img": "../img_Pisos/calcareas5.png",
-    "img1":"../img_Pisos/calcareas5.png",
-    "img2":"../img_Pisos/calcareas6.png",
+    "img": "../img_Pisos/cocodrilo.png",
+    "img1":"../img_Pisos/cocodrilo.png",
+    "img2":"",
     "desc2": "",
-    "punteo1": "Medidas 20X20 y 25X25",
+    "punteo1": "Medidas 25X25",
     "punteo2": "Diversos colores y modelos",
     "punteo3": "",
     "punteo4": "",
@@ -660,7 +645,51 @@
     "punteo6": "",
     "cat": "pisosCalcareos"
   },
- 
+  {
+    "title": "Baldosa Flor incaica",
+    "desc": "Pisos calcáreos",
+    "img": "../img_Pisos/flor_incaica.png",
+    "img1":"../img_Pisos/flor_incaica.png",
+    "img2":"",
+    "desc2": "",
+    "punteo1": "Medidas 25X25",
+    "punteo2": "Diversos colores y modelos",
+    "punteo3": "",
+    "punteo4": "",
+    "punteo5": "",
+    "punteo6": "",
+    "cat": "pisosCalcareos"
+  },
+  {
+    "title": "Baldosa Provenzal sin bisel",
+    "desc": "Pisos calcáreos",
+    "img": "../img_Pisos/provenzal_sin_bisel.png",
+    "img1":"../img_Pisos/provenzal_sin_bisel.png",
+    "img2":"",
+    "desc2": "",
+    "punteo1": "Medidas 25X25",
+    "punteo2": "Diversos colores y modelos",
+    "punteo3": "",
+    "punteo4": "",
+    "punteo5": "",
+    "punteo6": "",
+    "cat": "pisosCalcareos"
+  },
+  {
+    "title": "Baldosa Panes",
+    "desc": "Pisos calcáreos",
+    "img": "../img_Pisos/panes.png",
+    "img1":"../img_Pisos/panes.png",
+    "img2":"",
+    "desc2": "",
+    "punteo1": "Medidas 20X20 - 2 panes",
+    "punteo2": "Diversos colores y modelos",
+    "punteo3": "",
+    "punteo4": "",
+    "punteo5": "",
+    "punteo6": "",
+    "cat": "pisosCalcareos"
+  },
       {
         "title": "Hidrolaca Lakaplast",
         "desc": "Selladores",
