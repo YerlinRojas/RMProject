@@ -1,0 +1,32 @@
+,
+    {
+      "title": "PRODUCTOS",
+      "img" : "../banner_promo/productos_banner_1.jpg",
+      "link": "https://rusticosmendoza.ar",
+      "cat": "Promos"
+    }
+
+    pormosec
+
+    <section class="h-[90vh]  w-full max-w-6xl mx-auto grid grid-cols-1 gap-0  overflow-hidden shadow-xl">
+  {slides.map(({ img, link, title }, i) => (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      class={`relative group ${i === 0 ? 'row-span-1' : 'row-span-1'} h-full`}
+    >
+      <img
+        src={img}
+        alt={title}
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-[#2c0000]/40 group-hover:bg-[#2c0000]/90 transition duration-300" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h2 class="text-white text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl font-bold tracking-wide text-center">
+  {title}
+</h2>
+      </div>
+    </a>
+  ))}
+</section>
