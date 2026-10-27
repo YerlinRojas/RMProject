@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../../public/Logos-Iconos/Logo-Footer-289-95.png";
+import logo from "../../public/logos_rm/Rusticos_Mendoza-6.png";
 import imgW from "../../public/Logos-Iconos/whatsapp-icon.svg";
 import imgF from "../../public/Logos-Iconos/Icon_facebook.svg";
 import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
@@ -12,7 +12,7 @@ import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
   >
     <!-- logo empresa -->
     <div class="ml-5 sm:ml-5 md:ml-10">
-      <Image src={logo} alt="Rusticos Mendoza" class="w-[70%] sm:w-[100%]" />
+      <Image src={logo} alt="Rusticos Mendoza" width={200} height={400} class="w-full max-w-[200px] h-auto" />
     </div>
     <!-- ubicacion horarios -->
     <div
@@ -40,8 +40,13 @@ import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
             target="_blank"
             class="cursor-pointer"
           >
+          <p
+              class="text-white sm:text-sm font-semibold "
+            >
+            Ubicación
+            </p>
             <p
-              class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+              class="text-white sm:text-sm  "
             >
             Lateral Oeste acceso Norte y Pescadores, Las Heras, Mendoza
             </p>
@@ -65,17 +70,17 @@ import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
         </div>
         <div>
           <p
-            class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+            class="text-white  sm:text-sm font-semibold"
           >
             Horario de atención
           </p>
           <p
-            class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+            class="text-white sm:text-sm "
           >
            Lunes a Viernes de 9:30 am a 14:00 hrs y de 16:00 hrs a 18:30 hrs hs
           </p>
           <p
-            class="text-white text-xs sm:text-sm md:text-lg font-semibold sm:font-bold md:font-bold"
+            class="text-white sm:text-sm  "
           >
            Sábados de 10:00 am a 14:00 hrs
           </p>
@@ -98,7 +103,7 @@ import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
         class="flex flex-row items-center cursor-pointer"
       >
         <p
-          class="text-xs text-white sm:text-sm sm:font-semibold md:text-lg md:font-bold"
+          class="text-xs text-white sm:text-sm sm:font-semibold"
         >
           Whatsapp
         </p></a
@@ -116,7 +121,7 @@ import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
         class="flex flex-row items-center cursor-pointer cursor-pointer"
       >
         <p
-          class="text-white text-xs sm:text-sm sm:font-semibold md:text-lg md:font-bold"
+          class="text-white text-xs sm:text-sm sm:font-semibold "
         >
           Instagram
         </p></a>
@@ -132,7 +137,7 @@ import imgI from "../../public/Logos-Iconos/Icon_instagram.svg";
         class="flex flex-row items-center cursor-pointer cursor-pointer"
       >
         <p
-          class="text-white text-xs sm:text-sm sm:font-semibold md:text-lg md:font-bold"
+          class="text-white text-xs sm:text-sm sm:font-semibold "
         >
           Facebook
         </p></a
