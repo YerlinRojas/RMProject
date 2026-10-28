@@ -214,29 +214,31 @@ import logo from "../../public/logos_rm/Rusticos_Mendoza-5.png";
   const productsMenu = document.getElementById("products-menu");
   const productsArrow = document.getElementById("products-arrow");
 
-  function setMainMenu(open) {
-    if (!mainMenu || !menuToggle || !openIcon || !closeIcon) return;
+  function setMainMenu(open: boolean): void {
+  if (!mainMenu || !menuToggle || !openIcon || !closeIcon) return;
 
-    mainMenu.classList.toggle("hidden", !open);
-    menuToggle.setAttribute("aria-expanded", String(open));
-    menuToggle.setAttribute(
-      "aria-label",
-      open ? "Cerrar menú" : "Abrir menú"
-    );
+  mainMenu.classList.toggle("hidden", !open);
+  menuToggle.setAttribute("aria-expanded", String(open));
+  menuToggle.setAttribute(
+    "aria-label",
+    open ? "Cerrar menú" : "Abrir menú"
+  );
 
-    openIcon.classList.toggle("hidden", open);
-    closeIcon.classList.toggle("hidden", !open);
+  openIcon.classList.toggle("hidden", open);
+  closeIcon.classList.toggle("hidden", !open);
 
-    if (!open) setProductsMenu(false);
+  if (!open) {
+    setProductsMenu(false);
   }
+}
 
-  function setProductsMenu(open) {
-    if (!productsMenu || !productsToggle || !productsArrow) return;
+function setProductsMenu(open: boolean): void {
+  if (!productsMenu || !productsToggle || !productsArrow) return;
 
-    productsMenu.classList.toggle("hidden", !open);
-    productsToggle.setAttribute("aria-expanded", String(open));
-    productsArrow.classList.toggle("rotate-180", open);
-  }
+  productsMenu.classList.toggle("hidden", !open);
+  productsToggle.setAttribute("aria-expanded", String(open));
+  productsArrow.classList.toggle("rotate-180", open);
+}
 
   menuToggle?.addEventListener("click", () => {
     const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
