@@ -3,133 +3,284 @@ import { Image } from "astro:assets";
 import logo from "../../public/logos_rm/Rusticos_Mendoza-5.png";
 ---
 
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-<div class="w-full text-gray-700 bg-black dark-mode:text-gray-200 dark-mode:bg-gray-800" x-data="{ open: false }">
-  <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row lg:px-8">
-    <div class="p-4 flex flex-row items-center justify-between w-full">
-      <div>
-        <a href="/" class="text-lg text-white font-semibold tracking-widest uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline flex items-center">
-          <Image src={logo} alt="Rusticos Mendoza" width= {300}   height={600} class="w-full max-w-[200px] h-auto"/>
-        </a>
-      </div>
+<header class="relative z-50 w-full bg-black text-white shadow-md">
+  <div
+    class="relative mx-auto flex max-w-screen-2xl items-center justify-between
+           gap-4 px-4 py-3 sm:px-6 lg:px-8"
+  >
+    <!-- Logo -->
+    <a
+      href="/"
+      class="flex shrink-0 items-center"
+      aria-label="Rústicos Mendoza - Inicio"
+    >
+      <Image
+        src={logo}
+        alt="Rústicos Mendoza"
+        width={300}
+        height={600}
+        class="h-auto w-[150px] sm:w-[170px] lg:w-[185px]"
+      />
+    </a>
 
-      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-
-      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row md:gap-2">
-       <div @click.away="open = false"
-        class="relative"
-        x-data="{ open: false }"
-      >
+    <!-- Navegación -->
+    <nav
+      id="main-menu"
+      class="absolute left-0 right-0 top-full hidden
+             flex-col gap-1 border-t border-gray-800 bg-black
+             px-4 py-4 shadow-xl
+             md:static md:flex md:flex-row md:items-center
+             md:justify-end md:gap-4 md:border-0 md:bg-transparent
+             md:p-0 md:shadow-none"
+      aria-label="Navegación principal"
+    >
+      <!-- Productos -->
+      <div class="relative">
         <button
-          @click="open = !open"
-          class="flex flex-row items-center w-full px-4 py-2 mt-2 md:px-1 text-sm text-white font-bold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+          id="products-toggle"
+          type="button"
+          class="flex w-full items-center justify-between gap-2
+                 rounded-lg px-3 py-3 text-sm font-semibold
+                 transition-colors hover:bg-white/10
+                 md:w-auto md:py-2"
+          aria-expanded="false"
+          aria-controls="products-menu"
         >
-          <span>Productos</span>
+          Productos
           <svg
-            fill="currentColor"
+            id="products-arrow"
+            class="h-4 w-4 transition-transform duration-200"
             viewBox="0 0 20 20"
-            :class="{'rotate-180': open, 'rotate-0': !open}"
-            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
-            ><path
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
               fill-rule="evenodd"
               d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path></svg
-          >
+              clip-rule="evenodd"
+            />
+          </svg>
         </button>
+
+        <!-- Submenú independiente -->
         <div
-          x-show="open"
-          x-transition:enter="transition ease-out duration-100"
-          x-transition:enter-start="transform opacity-0 scale-95"
-          x-transition:enter-end="transform opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-75"
-          x-transition:leave-start="transform opacity-100 scale-100"
-          x-transition:leave-end="transform opacity-0 scale-95"
-          class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-50"
+          id="products-menu"
+          class="relative mt-1 hidden rounded-lg border border-gray-800
+                 bg-zinc-950 p-2
+                 md:absolute md:left-0 md:top-full md:mt-3
+                 md:w-56 md:shadow-2xl"
         >
-          <div
-            class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800"
+          <a href="/productos/revestimientos" class="dropdown-link">
+            Revestimientos
+          </a>
+          <a href="/productos/pisos" class="dropdown-link">
+            Pisos
+          </a>
+          <a href="/productos/mesadas" class="dropdown-link">
+            Mesadas
+          </a>
+          <a href="/productos/bachas" class="dropdown-link">
+            Bachas
+          </a>
+          <a href="/productos/lineaJardin" class="dropdown-link">
+            Línea Jardín
+          </a>
+          <a href="/productos/adhesivos" class="dropdown-link">
+            Adhesivos
+          </a>
+          <a href="/productos/selladores" class="dropdown-link">
+            Selladores
+          </a>
+          <a href="/productos/zocalos" class="dropdown-link">
+            Zócalos
+          </a>
+          <a
+            href="/productos/promos"
+            class="dropdown-link hover:!bg-red-800"
           >
-            <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/revestimientos">Revestimientos</a
-            >
-             <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/pisos">Pisos</a
-            >
-            <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/mesadas">Mesadas</a
-            >
-            <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/bachas">Bachas</a
-            >
-            <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/lineaJardin">Línea Jardín</a
-            >
-            <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/adhesivos">Adhesivos</a
-            >
-            <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/selladores">Selladores</a
-            >
-            <a
-              class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-              href="../productos/zocalos">Zócalos</a
-            >
-            <a
-  class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg 
-    dark-mode:bg-transparent dark-mode:hover:bg-red-700 dark-mode:focus:bg-red-700 
-    dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 
-    md:mt-0 hover:text-white focus:text-white hover:bg-[#2c0000]/90 focus:bg-[#2c0000]/40 
-    focus:outline-none focus:shadow-outline"
-  href="../productos/promos">Catálogo</a>
-  
-          </div>
+            Catálogo
+          </a>
         </div>
       </div>
-      <a
-        class="px-4 py-2 mt-2 md:px-1 text-white text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="/nuestraEmpresa">Nuestra Empresa</a
-      >
-      <a
-        class="px-4 py-2 mt-2 md:px-1 text-white text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="/contacto">Contacto</a
-      >
 
+      <!-- Enlaces principales -->
+      <a href="/nuestraEmpresa" class="nav-link">
+        Nuestra Empresa
+      </a>
+
+      <a href="/contacto" class="nav-link">
+        Contacto
+      </a>
+
+      <a href="/preguntasFrecuentes" class="nav-link">
+        Preguntas Frecuentes
+      </a>
+
+      <!-- Botón de presupuesto -->
       <a
-        class="px-4 py-2 mt-2 md:px-1 text-white text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="/preguntasFrecuentes">Preguntas Frecuentes</a
+        href="/presupuesto"
+        class="mt-2 inline-flex items-center justify-center
+               rounded-full bg-red-700 px-5 py-3 text-center
+               text-sm font-semibold text-white
+               transition-all duration-200
+               hover:-translate-y-0.5 hover:bg-red-800
+               active:scale-95
+               md:mt-0 md:whitespace-nowrap"
       >
-      <a
-  href="/presupuesto"
-  class="inline-flex items-center justify-center px-5 py-2.5
-         rounded-full
-         bg-red-700 text-white font-semibold text-sm
-         shadow-md
-         transition-all duration-300
-         hover:bg-red-800 hover:shadow-lg hover:-translate-y-0.5
-         active:scale-95"
->
-  Solicitar Presupuesto
-</a>
-   <!--    <a
-        class="px-4 py-2 mt-2 md:px-1 text-white text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="/simulador">Simulador</a
+        Solicitar Presupuesto
+      </a>
+    </nav>
+
+    <!-- Botón hamburguesa -->
+    <button
+      id="mobile-menu-toggle"
+      type="button"
+      class="flex h-11 w-11 shrink-0 items-center justify-center
+             rounded-lg transition-colors hover:bg-white/10
+             focus:outline-none focus:ring-2 focus:ring-red-600
+             md:hidden"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="main-menu"
+    >
+      <svg
+        id="menu-open-icon"
+        class="h-7 w-7"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        aria-hidden="true"
       >
-         -->
-      </nav>
-    </div>
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <svg
+        id="menu-close-icon"
+        class="hidden h-7 w-7"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        aria-hidden="true"
+      >
+        <path d="m18 6-12 12M6 6l12 12" />
+      </svg>
+    </button>
   </div>
-</div>
+</header>
 
+<style>
+  .nav-link {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 200ms, color 200ms;
+  }
+
+  .nav-link:hover {
+    background-color: rgb(255 255 255 / 10%);
+    color: #fca5a5;
+  }
+
+  .dropdown-link {
+    display: block;
+    border-radius: 0.375rem;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.875rem;
+    color: #e5e7eb;
+    transition: background-color 200ms, color 200ms;
+  }
+
+  .dropdown-link:hover {
+    background-color: rgb(255 255 255 / 10%);
+    color: white;
+  }
+</style>
+
+<script>
+  const menuToggle = document.getElementById("mobile-menu-toggle");
+  const mainMenu = document.getElementById("main-menu");
+  const openIcon = document.getElementById("menu-open-icon");
+  const closeIcon = document.getElementById("menu-close-icon");
+
+  const productsToggle = document.getElementById("products-toggle");
+  const productsMenu = document.getElementById("products-menu");
+  const productsArrow = document.getElementById("products-arrow");
+
+  function setMainMenu(open) {
+    if (!mainMenu || !menuToggle || !openIcon || !closeIcon) return;
+
+    mainMenu.classList.toggle("hidden", !open);
+    menuToggle.setAttribute("aria-expanded", String(open));
+    menuToggle.setAttribute(
+      "aria-label",
+      open ? "Cerrar menú" : "Abrir menú"
+    );
+
+    openIcon.classList.toggle("hidden", open);
+    closeIcon.classList.toggle("hidden", !open);
+
+    if (!open) setProductsMenu(false);
+  }
+
+  function setProductsMenu(open) {
+    if (!productsMenu || !productsToggle || !productsArrow) return;
+
+    productsMenu.classList.toggle("hidden", !open);
+    productsToggle.setAttribute("aria-expanded", String(open));
+    productsArrow.classList.toggle("rotate-180", open);
+  }
+
+  menuToggle?.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    setMainMenu(!isOpen);
+  });
+
+  productsToggle?.addEventListener("click", () => {
+    const isOpen =
+      productsToggle.getAttribute("aria-expanded") === "true";
+
+    setProductsMenu(!isOpen);
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+
+    if (!(target instanceof Element)) return;
+
+    if (
+      mainMenu &&
+      menuToggle &&
+      !mainMenu.contains(target) &&
+      !menuToggle.contains(target)
+    ) {
+      setMainMenu(false);
+    } else if (
+      productsMenu &&
+      productsToggle &&
+      !productsMenu.contains(target) &&
+      !productsToggle.contains(target)
+    ) {
+      setProductsMenu(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMainMenu(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      setMainMenu(false);
+    }
+  });
+</script>
